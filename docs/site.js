@@ -157,14 +157,23 @@
 
   let pointer;
 
-  function clearPointer() {
-    pointer = undefined;
+  function hidePointer() {
     skull.hidden = true;
     page.classList.remove('has-skull-pointer');
   }
 
+  function clearPointer() {
+    pointer = undefined;
+    hidePointer();
+  }
+
   function drawPointer() {
     if (!pointer || !skull.naturalWidth) return;
+    // A native fullscreen video can't show the page overlay. Use the CSS skull there.
+    if (document.fullscreenElement?.matches('video')) {
+      hidePointer();
+      return;
+    }
     const layer = viewer?.open ? viewer : document.body;
     if (skull.parentElement !== layer) layer.append(skull);
     skull.style.transform = `translate3d(${pointer.x}px, ${pointer.y}px, 0) translate(-50%, -50%)`;
@@ -192,6 +201,7 @@
     if (event.pointerType === 'mouse') clearPointer();
   }, {passive:true});
   skull.addEventListener('load', drawPointer);
+  document.addEventListener('fullscreenchange', drawPointer);
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) clearPointer();
   });
