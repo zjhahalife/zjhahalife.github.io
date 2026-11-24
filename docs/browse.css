@@ -1,0 +1,21 @@
+/* A quiet reading position marker; it occupies no document space. */
+.work-page>.reading-progress{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:110;
+  width:100%;
+  height:1px;
+  pointer-events:none;
+  background:var(--ink,#343833);
+  opacity:.45;
+  transform:scaleX(0);
+  transform-origin:left center;
+  transition:transform 80ms linear;
+}
+@media(prefers-reduced-motion:reduce){
+  .work-page>.reading-progress{transition:none}
+}
+@media print{
+  .work-page>.reading-progress{display:none}
+}

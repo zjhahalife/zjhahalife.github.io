@@ -9,6 +9,8 @@ from collections import defaultdict
 from urllib.parse import urlparse, urljoin
 import argparse, json, re
 from xml.sax.saxutils import escape as xml_escape
+from preview_scale import (physical_preview, scale_policy, preview_class,
+                           preview_attributes, preview_style)
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / 'docs'
@@ -32,6 +34,9 @@ BASE_URL = config.get('base_url', '')
 public_source = json.loads(PUBLIC_SOURCE.read_text(encoding='utf-8'))
 works = public_source['works']
 byid = {work['id']: work for work in works}
+PHYSICAL_POLICY = scale_policy(works)
+PRESENTATION_FILE = ROOT / 'source' / 'presentation.json'
+PRESENTATION = json.loads(PRESENTATION_FILE.read_text(encoding='utf-8')) if PRESENTATION_FILE.exists() else {}
 profile = public_source
 source = {
     'bio': {'en': public_source['bio']},
@@ -51,6 +56,10 @@ icon = '<svg class="instagram-icon" aria-hidden="true" viewBox="0 0 24 24" fill=
 
 def mark(): return ''
 
+def shown_year(w):
+    years = [int(value) for value in re.findall(r'\d{4}', w.get('year', ''))]
+    return str(max(years)) if years else ''
+
 def image_limit(im):
     maximum = im.get('display_max_width')
     return f'--image-max-width:{int(maximum)}px;' if maximum else ''
@@ -58,7 +67,7 @@ def image_limit(im):
 def image(w, number=0, prefix='', eager=False, thumbnail=False):
     im = w['web_images'][number]
     src = im['thumbnail'] if thumbnail else im['src']
-    alt = ', '.join(part for part in [w['title'], w['year']] if part)
+    alt = ', '.join(part for part in [w['title'], shown_year(w)] if part)
     limit = f' data-display-max-width="{int(im["display_max_width"])}"' if im.get('display_max_width') else ''
     return f'<img src="{prefix}{src}" width="{im["width"]}" height="{im["height"]}" alt="{E(alt)}" loading="{"eager" if eager else "lazy"}" decoding="async"{limit}>'
 
@@ -73,7 +82,24 @@ def footer(prefix=''):
     return f'''<footer class="site-footer"><div class="footer-column"><h2>Works</h2>{work_links}</div><div class="footer-column"><h2>Studio</h2><a href="{prefix}about.html">Biography</a><a href="{prefix}exhibitions.html">Exhibitions</a><a href="{prefix}contact.html">Contact</a></div><div class="footer-column footer-location"><h2>Location</h2><p>Hangzhou, China<br>Providence, RI, USA</p></div><div class="footer-column footer-contact"><h2>Contact</h2><a href="mailto:jun00074@gmail.com">jun00074@gmail.com</a><a href="{INSTAGRAM}" target="_blank" rel="noopener noreferrer">Instagram / @zjhahalife</a></div><div class="footer-bottom"><a class="studio-signature" href="{prefix}index.html">© 2026 {E(STUDIO)}</a></div></footer>'''
 
 def page(title, section, content, description='', prefix=''):
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(title)} — Zhou Jun</title><meta name="description" content="{E(description or title)}"><meta property="og:title" content="{E(title)} — Zhou Jun"><meta property="og:type" content="website"><meta name="theme-color" content="#eae8e4"><link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{prefix}styles.css?v=19"><script defer src="{prefix}site.js?v=19"></script></head><body class="{section}-page">{header(section, prefix)}<main id="main" class="layout-main">{content}</main>{footer(prefix)}</body></html>'''
+    physical = (f'data-physical-ceiling="{PHYSICAL_POLICY["ceiling"]}" '
+                f'data-physical-max-width="{PHYSICAL_POLICY["max_width"]:.8f}" '
+                f'data-physical-max-height="{PHYSICAL_POLICY["max_height"]:.8f}"')
+    return (f'<!doctype html><html lang="en"><head><meta charset="utf-8">'
+            f'<meta name="viewport" content="width=device-width,initial-scale=1">'
+            f'<title>{E(title)} — Zhou Jun</title>'
+            f'<meta name="description" content="{E(description or title)}">'
+            f'<meta property="og:title" content="{E(title)} — Zhou Jun">'
+            f'<meta property="og:type" content="website"><meta name="theme-color" content="#eae8e4">'
+            f'<link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml">'
+            f'<link rel="stylesheet" href="{prefix}styles.css?v=20.1">'
+            f'<link rel="stylesheet" href="{prefix}motion.css?v=20.1">'
+            f'<link rel="stylesheet" href="{prefix}browse.css?v=20.1">'
+            f'<script defer src="{prefix}site.js?v=20.1"></script>'
+            f'<script defer src="{prefix}motion.js?v=20.1"></script>'
+            f'<script defer src="{prefix}browse.js?v=20.1"></script></head>'
+            f'<body class="{section}-page" {physical}>{header(section, prefix)}'
+            f'<main id="main" class="layout-main">{content}</main>{footer(prefix)}</body></html>')
 
 def selected(key, cls):
     w = byid[key]
@@ -82,11 +108,17 @@ def selected(key, cls):
 def cover_work(key, cls):
     w = byid[key]
     im = w['web_images'][0]
-    year = f'<span class="cover-year">{E(w["year"])}</span>' if w['year'] else ''
-    return f'''<article class="cover-work {cls}" data-work="{key}" style="--art-ratio:{im['width']/im['height']:.8f};{image_limit(im)}"><a class="cover-image" href="{w['url']}" aria-label="View {E(w['title'])}">{image(w, eager=True)}</a><div class="cover-caption"><div class="cover-caption-heading"><h2><a href="{w['url']}">{E(w['title'])}</a></h2>{year}</div><p>{E(w['medium'])}</p><p>{E(w['size'])}</p></div></article>'''
+    year = f'<span class="cover-year">{shown_year(w)}</span>' if w['year'] else ''
+    style = f'--art-ratio:{im["width"]/im["height"]:.8f};' + image_limit(im) + preview_style(w)
+    return (f'<article class="cover-work {cls}{preview_class(w)}" data-work="{key}" '
+            f'style="{style}"{preview_attributes(w)}><a class="cover-image" href="{w["url"]}" '
+            f'aria-label="View {E(w["title"])}">{image(w, eager=True)}</a>'
+            f'<div class="cover-caption"><div class="cover-caption-heading"><h2>'
+            f'<a href="{w["url"]}">{E(w["title"])}</a></h2>{year}</div>'
+            f'<p>{E(w["medium"])}</p><p>{E(w["size"])}</p></div></article>')
 
 home = '<h1 class="visually-hidden">Selected works by Zhou Jun</h1><div class="cover-running"><span>Selected paintings</span><a href="works.html?category=painting">All paintings</a></div>'
-home += '<section class="selected-spread" aria-label="Selected paintings">'
+home += '<section class="selected-spread" aria-label="Selected paintings" data-physical-context="cover">'
 home += cover_work('P39', 'cover-lead')
 home += cover_work('P36', 'cover-landscape cover-landscape-one')
 home += cover_work('P38', 'cover-landscape cover-landscape-two')
@@ -95,23 +127,45 @@ home += '<section class="home-studio" aria-labelledby="home-studio-title"><h2 id
 (SITE / 'index.html').write_text(page('Selected works', 'selected', home, 'Sodium Ion and two Untitled paintings by Zhou Jun. Selected works and studio information.'), encoding='utf-8')
 
 rank = {key: i for i, key in enumerate(['P39', 'P36', 'P38', 'P01', 'P35', 'P37', 'P02', 'P03', 'P04', 'P05', 'P06', 'P07', 'I08', 'I01'])}
+# Artist-directed visual adjacency is secondary to the date order.
+visual_ids = [key for keys in PRESENTATION.get('visual_order_within_year', {}).values() for key in keys]
+if visual_ids:
+    rank = {key: index for index, key in enumerate(visual_ids)}
+
+def archive_card(w, number=0, series_start=False):
+    im = w['web_images'][number]
+    query = ' '.join([w['title'], w['year'], w['medium'], w['size']]).lower()
+    display_year = str(year_number(w)) if year_number(w) >= 0 else 'Undated'
+    year = f'<span class="archive-year">{display_year}</span>'
+    size = f'<p class="archive-size">{E(w["size"])}</p>' if w['size'] else ''
+    split = w['id'] in PRESENTATION.get('individual_image_cards', [])
+    part = f'<p class="archive-part">Image {number+1} / {len(w["web_images"])}</p>' if split else ''
+    href = w['url'] + (f'#image-{number+1}' if split else '')
+    cls = 'archive-work' + preview_class(w, number) + (' archive-series-start' if series_start else '')
+    return (f'<article class="{cls}" style="{image_limit(im)}{preview_style(w, number)}" '
+            f'data-work-id="{w["id"]}" data-image-index="{number+1}" '
+            f'data-category="{" ".join(w["categories"])}" data-search="{E(query)}"'
+            f'{preview_attributes(w, number)}><a href="{href}">'
+            f'<span class="archive-media">{image(w, number, thumbnail=True)}</span>'
+            f'<div class="archive-caption"><div class="archive-caption-heading"><h3>{E(w["title"])}</h3>{year}</div>'
+            f'{part}<p class="archive-medium">{E(w["medium"])}</p>{size}</div></a></article>')
+
 def year_number(w):
-    match = re.search(r'\d{4}', w['year'])
-    return int(match.group()) if match else 9999
+    years = [int(value) for value in re.findall(r'\d{4}', w['year'])]
+    return max(years) if years else -1
 ordered = sorted(works, key=lambda w: (-year_number(w), rank.get(w['id'], 100), w['id']))
 groups = defaultdict(list)
 for w in ordered:
-    match = re.search(r'\d{4}', w['year'])
-    groups[match.group() if match else 'Recent'].append(w)
+    year = year_number(w)
+    groups[year].append(w)
 archive = f'<div class="index-heading"><h1>Works</h1><div class="index-tools"><span id="result-count" aria-live="polite">{len(works)} works</span><input type="search" id="art-search" aria-label="Search works" placeholder="Search works" autocomplete="off"></div></div>'
 archive += '<nav class="archive-categories" aria-label="Filter works"><a class="all-works-link" href="works.html" data-category="all">All</a>'+''.join(f'<a class="category-link" data-category="{slug}" href="{"books.html" if slug == "books" else "?category=" + slug}">{label}</a>' for slug, label in categories)+'</nav>'
-archive += '<section class="year-group all-years" data-year="all"><div class="year-works">'
+archive += '<section class="archive-grid year-works" data-physical-context="archive" aria-label="Works, newest first">'
 for w in ordered:
-    query = ' '.join([w['title'], w['year'], w['medium'], w['size']]).lower()
-    year = f'<span class="archive-year">{E(w["year"])}</span>' if w['year'] else ''
-    size = f'<p class="archive-size">{E(w["size"])}</p>' if w['size'] else ''
-    archive += f'<article class="archive-work" style="{image_limit(w["web_images"][0])}" data-category="{" ".join(w["categories"])}" data-search="{E(query)}"><a href="{w["url"]}"><span class="archive-media">{image(w, thumbnail=True)}{mark()}</span><div class="archive-caption-heading"><h3>{E(w["title"])}</h3>{year}</div><p class="archive-medium">{E(w["medium"])}</p>{size}</a></article>'
-archive += '</div></section>'
+    split = w['id'] in PRESENTATION.get('individual_image_cards', [])
+    for number in range(len(w['web_images']) if split else 1):
+        archive += archive_card(w, number, series_start=number == 0 and w['id'] in PRESENTATION.get('series_starts', []))
+archive += '</section>'
 archive += '<p id="empty-state" hidden>No matching works.</p>'
 (SITE / 'works.html').write_text(page('Works', 'works', archive, 'The work index of Zhou Jun, 2023–2026.'), encoding='utf-8')
 
@@ -129,7 +183,12 @@ for kind, label in [('Solo exhibition', 'Solo Exhibitions'), ('Group exhibition'
     ex += '</div></section>'
 (SITE / 'exhibitions.html').write_text(page('Exhibitions', 'exhibitions', ex, 'Zhou Jun, exhibition history.'), encoding='utf-8')
 bio_text = source['bio']['en'].removesuffix('Rhode Island School of Design.').strip()
-about = f'<div class="text-page"><h1 class="page-title">Zhou Jun</h1><p>{E(bio_text)}</p><section class="text-section"><h2>Education</h2><p>2023–present<br>Rhode Island School of Design, Providence, RI, USA<br>BFA in Sculpture, expected 2028.</p></section><section class="text-section"><h2>Artist statement</h2><p>{E(source["statement"]["en"])}</p></section><section class="text-section"><h2>Artist books</h2><p><a class="text-link" href="works/b01.html">2025 — Banana Republic</a><br>2024 — NO.0</p><p><a class="text-link" href="books.html">All artist books</a></p></section><section class="text-section"><h2>Exhibitions</h2><p><a class="text-link" href="exhibitions.html">Exhibition history</a></p></section></div>'
+portrait = public_source.get('portrait')
+studio_portrait = (f'<figure class="artist-portrait"><img src="{E(portrait["src"])}" '
+                   f'width="{portrait["width"]}" height="{portrait["height"]}" '
+                   f'alt="{E(portrait["alt"])}" loading="eager" decoding="async"></figure>') if portrait else ''
+studio_intro = f'<section class="studio-introduction">{studio_portrait}<div class="studio-biography-copy"><p>{E(bio_text)}</p></div></section>'
+about = f'<div class="text-page"><h1 class="page-title">Zhou Jun</h1>{studio_intro}<section class="text-section"><h2>Education</h2><p>2023–present<br>Rhode Island School of Design, Providence, RI, USA<br>BFA in Sculpture, expected 2028.</p></section><section class="text-section"><h2>Artist statement</h2><p>{E(source["statement"]["en"])}</p></section><section class="text-section"><h2>Artist books</h2><p><a class="text-link" href="works/b01.html">2025 — Banana Republic</a><br>2024 — NO.0</p><p><a class="text-link" href="books.html">All artist books</a></p></section><section class="text-section"><h2>Exhibitions</h2><p><a class="text-link" href="exhibitions.html">Exhibition history</a></p></section></div>'
 (SITE / 'about.html').write_text(page('About', 'about', about, 'Zhou Jun, biography and artist statement.'), encoding='utf-8')
 contact = f'<div class="text-page"><h1 class="page-title">Contact</h1><p><a class="text-link" href="mailto:jun00074@gmail.com">jun00074@gmail.com</a></p><p><a class="text-link" href="{INSTAGRAM}" target="_blank" rel="noopener noreferrer">Instagram / @zjhahalife</a></p></div>'
 (SITE / 'contact.html').write_text(page('Contact', 'contact', contact, 'Contact Zhou Jun.'), encoding='utf-8')
@@ -179,11 +238,11 @@ def credits(w):
 
 for i, w in enumerate(ordered):
     previous_work, next_work = ordered[(i-1) % len(ordered)], ordered[(i+1) % len(ordered)]
-    body = '<div class="work-detail-layout"><div class="work-images" aria-label="Artwork images">'
+    body = '<div class="work-detail-layout"><div class="work-images" aria-label="Artwork images" data-physical-context="detail">'
     for n, im in enumerate(w['web_images']):
         ratio = im['width'] / im['height']
-        body += f'<figure class="work-frame" style="--image-ratio:{ratio:.8f};{image_limit(im)}"><button class="work-image" type="button" data-zoom="../{im["src"]}" aria-label="Enlarge {E(w["title"])}, image {n+1}"><span class="detail-image-surface">{image(w, n, "../", eager=n==0)}</span></button>'
-        mobile_year = f'<span class="image-year">{E(w["year"])}</span>' if w['year'] else ''
+        body += f'<figure id="image-{n+1}" class="work-frame{preview_class(w, n)}" style="--image-ratio:{ratio:.8f};{image_limit(im)}{preview_style(w, n)}"{preview_attributes(w, n)}><button class="work-image" type="button" data-zoom="../{im["src"]}" aria-label="Enlarge {E(w["title"])}, image {n+1}"><span class="detail-image-surface">{image(w, n, "../", eager=n==0)}</span></button>'
+        mobile_year = f'<span class="image-year">{shown_year(w)}</span>' if w['year'] else ''
         facts_class = 'image-caption-facts long-medium' if len(w['medium']) > 80 else 'image-caption-facts'
         body += f'<figcaption class="mobile-image-caption"><div class="image-caption-heading"><p class="image-caption-title">{E(w["title"])}</p>{mobile_year}</div><dl class="{facts_class}"><div><dt>Medium</dt><dd>{E(w["medium"])}</dd></div>'
         if w['size']: body += f'<div><dt>Dimensions</dt><dd>{E(w["size"])}</dd></div>'
@@ -202,7 +261,7 @@ for i, w in enumerate(ordered):
     if w.get('video'):
         video = w['video']
         body += f'<figure class="work-video" id="work-video"><video controls playsinline preload="metadata" poster="../{w["web_images"][0]["src"]}" aria-label="{E(w["title"])} — video"><source src="../{video["src"]}" type="video/mp4"><a href="../{video["src"]}">Open video</a></video><figcaption><span>{"Book interior film" if w["id"] == "B01" else "Video"}</span><span>{E(w["video_duration"])}</span></figcaption></figure>'
-    year = f'<span>{E(w["year"])}</span>' if w['year'] else ''
+    year = f'<span>{shown_year(w)}</span>' if w['year'] else ''
     body += f'</div><aside class="work-information"><div class="work-heading"><h1>{E(w["title"])}</h1>{year}</div><div class="work-metadata"><dl class="work-facts"><div><dt>Medium</dt><dd>{E(w["medium"])}</dd></div>'
     if w['size']: body += f'<div><dt>Dimensions</dt><dd>{E(w["size"])}</dd></div>'
     if w.get('video_duration'): body += f'<div><dt>Video duration</dt><dd>{E(w["video_duration"])}</dd></div>'
@@ -217,13 +276,14 @@ for i, w in enumerate(ordered):
     body += '</div></aside></div>'
     body += f'<nav class="work-navigation" aria-label="Work navigation"><a href="{previous_work["id"].lower()}.html">Previous</a><a href="../works.html">Index</a><a href="{next_work["id"].lower()}.html">Next</a></nav>'
     body += f'<dialog id="lightbox" class="lightbox" aria-label="Artwork image viewer"><div class="lightbox-body"><div class="lightbox-toolbar"><p>{E(w["title"])}</p><button type="button" data-close>Close</button></div><div class="lightbox-stage"><div class="lightbox-artwork"><img alt="{E(w["title"])}">{mark()}</div></div><div class="lightbox-controls"><button type="button" data-prev>Previous image</button><span data-position></span><button type="button" data-next>Next image</button></div></div></dialog>'
-    description = '. '.join(part for part in [', '.join(part for part in [w['title'], w['year']] if part), w['medium']] if part) + '.'
+    description = '. '.join(part for part in [', '.join(part for part in [w['title'], shown_year(w)] if part), w['medium']] if part) + '.'
     (SITE / w['url']).write_text(page(w['title'], 'work', body, description, '../'), encoding='utf-8')
 
 public = {'artist': 'Zhou Jun', 'studio': STUDIO, 'instagram': INSTAGRAM,
           'bio': source['bio']['en'], 'statement': source['statement']['en'], 'works': works,
           'education': profile['education'], 'exhibitions': profile['exhibitions'],
           'publications': profile['publications'], 'contact': {'email': source['contact']['email'], 'instagram': INSTAGRAM}}
+if portrait: public['portrait'] = portrait
 (SITE / 'works-data.json').write_text(json.dumps(public, ensure_ascii=False, indent=2), encoding='utf-8')
 
 # Add deployment-only metadata after all approved pages have been rendered.

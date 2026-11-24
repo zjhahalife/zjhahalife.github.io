@@ -1,0 +1,58 @@
+/* Image-only motion. Layout and the final physical preview size stay unchanged. */
+.artwork-motion-target {
+  transform-origin: center;
+  transition: transform 160ms ease-out;
+}
+.artwork-entering {
+  animation: artwork-enter 560ms cubic-bezier(.2,.7,.25,1);
+}
+.artwork-feedback {
+  animation: artwork-feedback 320ms cubic-bezier(.2,.7,.25,1);
+}
+.lightbox-artwork.lightbox-pop {
+  transform-origin: center;
+  animation: artwork-detail 340ms cubic-bezier(.2,.7,.25,1);
+}
+@keyframes artwork-enter {
+  0% { opacity: .72; transform: translateY(8px) scale(.97); }
+  70% { opacity: 1; transform: translateY(-1px) scale(1.008); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes artwork-feedback {
+  0% { transform: none; }
+  32% { transform: scale(.985); }
+  72% { transform: scale(1.006); }
+  100% { transform: none; }
+}
+@keyframes artwork-detail {
+  0% { opacity: .8; transform: scale(.975); }
+  72% { opacity: 1; transform: scale(1.008); }
+  100% { opacity: 1; transform: none; }
+}
+@media (hover:hover) and (pointer:fine) {
+  a:hover > .artwork-motion-target:not(.artwork-entering):not(.artwork-feedback),
+  button:hover > .artwork-motion-target:not(.artwork-entering):not(.artwork-feedback),
+  a.artwork-motion-target:hover:not(.artwork-entering):not(.artwork-feedback) {
+    transform: translateY(-2px);
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  .artwork-motion-target,
+  .artwork-entering,
+  .artwork-feedback,
+  .lightbox-artwork.lightbox-pop {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+@media print {
+  .artwork-motion-target,
+  .lightbox-artwork.lightbox-pop {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

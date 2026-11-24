@@ -69,7 +69,7 @@
       "title": "HOrroor Nevel Website",
       "year": "2026",
       "medium": "Acrylic on canvas",
-      "size": "60 × 80 cm",
+      "size": "30 × 40 cm",
       "categories": [
         "painting"
       ],
@@ -502,7 +502,7 @@
       "title": "Desert 1&2",
       "year": "2024",
       "medium": "Acrylic on plank",
-      "size": "30 × 40 cm",
+      "size": "30 × 40 cm each",
       "categories": [
         "painting"
       ],
@@ -944,7 +944,7 @@
       "title": "EGG Circulate",
       "year": "2023",
       "medium": "Acrylic on canvas",
-      "size": "120 × 80",
+      "size": "120 × 80 cm",
       "categories": [
         "painting"
       ],
@@ -1914,7 +1914,7 @@
     {
       "id": "P39",
       "title": "Sodium Ion",
-      "year": "",
+      "year": "2026",
       "medium": "Oil and acrylic paint",
       "size": "30 × 40 cm",
       "categories": [
@@ -2067,5 +2067,11 @@
   "contact": {
     "email": "jun00074@gmail.com",
     "instagram": "https://www.instagram.com/zjhahalife/"
+  },
+  "portrait": {
+    "src": "assets/zhou-jun-portrait.jpg",
+    "width": 374,
+    "height": 370,
+    "alt": "Zhou Jun"
   }
 }

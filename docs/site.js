@@ -11,14 +11,107 @@
   const search=document.querySelector('#art-search');
   let category=new URLSearchParams(location.search).get('category')||'all';
   if(!['all','painting','installation','photography','books','video','performance'].includes(category))category='all';
+  let relativeLayoutFrame=0;
+  function isShown(element){return !element.closest('[hidden]')&&element.getClientRects().length>0;}
+  function positiveNumber(value,fallback){const number=Number(value);return Number.isFinite(number)&&number>0?number:fallback;}
+  function layoutRelativePreviews(){
+    const ceiling=positiveNumber(document.body.dataset.physicalCeiling,3.8);
+    const maxWidth=positiveNumber(document.body.dataset.physicalMaxWidth,80);
+    const maxHeight=positiveNumber(document.body.dataset.physicalMaxHeight,120);
+    const mobile=innerWidth<=900;
+    const contexts=[...document.querySelectorAll('[data-physical-context]')].filter(isShown);
+    const physicalItems=context=>[...context.querySelectorAll('[data-physical-long-cm]')].filter(isShown);
+    const archives=contexts.filter(context=>context.dataset.physicalContext==='archive');
+    const archiveWidths=archives.flatMap(context=>[...context.querySelectorAll('.archive-work')].filter(isShown).map(card=>card.clientWidth)).filter(width=>width>0);
+    if(mobile)archiveWidths.push(innerWidth*.78);
+    const archiveUnit=Math.max(.01,Math.min(ceiling,...archiveWidths.map(width=>width/maxWidth)));
+    for(const context of contexts){
+      const kind=context.dataset.physicalContext;
+      const items=physicalItems(context);
+      let unit=ceiling;
+      if(kind==='archive'){
+        unit=archiveUnit;
+      }else if(kind==='cover'&&!mobile){
+        const css=getComputedStyle(context);
+        const columns=css.gridTemplateColumns.split(/\s+/).map(parseFloat).filter(Number.isFinite);
+        const gap=parseFloat(css.rowGap)||0;
+        const contentHeight=context.clientHeight-(parseFloat(css.paddingTop)||0)-(parseFloat(css.paddingBottom)||0);
+        const right=items.filter(item=>item.classList.contains('cover-landscape'));
+        const left=items.filter(item=>item.classList.contains('cover-lead'));
+        const rightHeight=right.reduce((sum,item)=>sum+positiveNumber(item.dataset.previewHeightUnits,1),0);
+        const rightCaptions=right.reduce((sum,item)=>sum+(item.querySelector('.cover-caption')?.offsetHeight||0),0);
+        const widthLimits=items.map(item=>{
+          const column=item.classList.contains('cover-lead')?0:1;
+          const available=columns[column]||item.clientWidth||context.clientWidth;
+          return available/positiveNumber(item.dataset.previewWidthUnits,maxWidth);
+        });
+        const heightLimits=[];
+        if(rightHeight)heightLimits.push((contentHeight-rightCaptions-gap*Math.max(0,right.length-1))/rightHeight);
+        left.forEach(item=>heightLimits.push((contentHeight-(item.querySelector('.cover-caption')?.offsetHeight||0))/positiveNumber(item.dataset.previewHeightUnits,maxHeight)));
+        unit=Math.min(ceiling,...widthLimits,...heightLimits);
+      }else{
+        const availableWidth=Math.min(context.clientWidth,mobile?innerWidth*.78:Infinity);
+        const availableHeight=Math.max(1,innerHeight-(mobile?300:220));
+        unit=Math.min(ceiling,availableWidth/maxWidth,availableHeight/maxHeight);
+      }
+      context.style.setProperty('--physical-unit',Math.max(.01,unit).toFixed(6)+'px');
+    }
+    const documentationMode=document.body.dataset.archiveMode==='documentation';
+    // Equalise only media within each actual grid row. A series can start a
+    // new row, and filtering can move cards, so array chunks are not rows.
+    for(const context of archives){
+      const cards=[...context.querySelectorAll('.archive-work')].filter(isShown);
+      cards.forEach(card=>{const media=card.querySelector('.archive-media');if(media)media.style.height='auto';});
+      if(documentationMode)continue;
+      const rows=[];
+      cards.forEach(card=>{
+        const top=card.offsetTop;
+        let row=rows.find(value=>Math.abs(value.top-top)<1);
+        if(!row){row={top,cards:[]};rows.push(row);}
+        row.cards.push(card);
+      });
+      rows.forEach(row=>{
+        const height=Math.max(0,...row.cards.map(card=>{const image=card.querySelector('.archive-media img');return image?(parseFloat(getComputedStyle(image).height)||image.clientHeight):0;}));
+        row.cards.forEach(card=>{const media=card.querySelector('.archive-media');if(media&&height)media.style.height=height.toFixed(3)+'px';});
+      });
+    }
+    // Type follows the visible image, while a minimum reading width keeps
+    // small canvases legible. The whole caption stays on the image centre.
+    document.querySelectorAll('.archive-work,.cover-work,.work-frame.physical-preview').forEach(item=>{
+      if(!isShown(item))return;
+      const image=item.querySelector('img');if(!image)return;
+      const width=parseFloat(getComputedStyle(image).width)||image.clientWidth;
+      const available=Math.min(item.clientWidth,mobile?innerWidth*.78:Infinity);
+      const physical=item.hasAttribute('data-physical-long-cm');
+      const captionWidth=Math.min(available,physical?Math.max(160,width):width);
+      const titleSize=physical?Math.max(14,Math.min(17,14+(width-160)/50)):17;
+      item.style.setProperty('--caption-width',captionWidth.toFixed(2)+'px');
+      item.style.setProperty('--caption-title-size',titleSize.toFixed(2)+'px');
+      item.style.setProperty('--caption-meta-size',physical&&width<210?'12px':'13px');
+    });
+    const anyPhysical=contexts.some(context=>physicalItems(context).length>0);
+    document.querySelectorAll('[data-relative-scale-note]').forEach(note=>{note.hidden=!anyPhysical;});
+  }
+  function scheduleRelativeLayout(){
+    if(relativeLayoutFrame)return;
+    relativeLayoutFrame=requestAnimationFrame(()=>{relativeLayoutFrame=0;layoutRelativePreviews();});
+  }
+  window.addEventListener('resize',scheduleRelativeLayout,{passive:true});
+  window.addEventListener('orientationchange',scheduleRelativeLayout,{passive:true});
+  document.fonts?.ready.then(scheduleRelativeLayout);
+  [...document.images].forEach(image=>image.addEventListener('load',scheduleRelativeLayout,{passive:true}));
+  scheduleRelativeLayout();
   function updateArchive(){
     if(!entries.length)return;
-    const query=search.value.trim().toLocaleLowerCase();let count=0;
-    entries.forEach(entry=>{const show=(category==='all'||entry.dataset.category.split(' ').includes(category))&&(!query||entry.dataset.search.includes(query));entry.hidden=!show;if(show)count++;});
+    document.body.dataset.archiveMode=['installation','video','photography','performance'].includes(category)?'documentation':'artworks';
+    const query=search.value.trim().toLocaleLowerCase();const projects=new Set();
+    entries.forEach(entry=>{const show=(category==='all'||entry.dataset.category.split(' ').includes(category))&&(!query||entry.dataset.search.includes(query));entry.hidden=!show;if(show)projects.add(entry.dataset.workId||entry.querySelector('a')?.getAttribute('href')||entry);});
+    const count=projects.size;
     document.querySelectorAll('.year-group').forEach(group=>{const visible=[...group.querySelectorAll('.archive-work')].filter(entry=>!entry.hidden);group.hidden=visible.length===0;group.querySelector('.year-works').classList.toggle('few-works',visible.length<=3);});
     document.querySelector('#result-count').textContent=`${count} ${count===1?'work':'works'}`;
     document.querySelector('#empty-state').hidden=count!==0;
     document.querySelectorAll('.category-link,.all-works-link').forEach(link=>{if((link.dataset.category||'all')===category)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');});
+    scheduleRelativeLayout();
   }
   if(entries.length){
     document.querySelectorAll('.category-link,.all-works-link').forEach(link=>link.addEventListener('click',event=>{if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;if(link.getAttribute('href').split('?')[0].endsWith('books.html'))return;event.preventDefault();category=link.dataset.category||'all';search.value='';try{history.replaceState({},'',category==='all'?location.pathname:`?category=${category}`);}catch(_){}updateArchive();closeMenu();window.scrollTo({top:0,behavior:'instant'});}));
