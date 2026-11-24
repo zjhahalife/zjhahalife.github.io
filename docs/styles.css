@@ -281,7 +281,6 @@ h1,h2,h3,p,button,input{font-weight:400}
 .archive-grid.year-works{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:42px 34px;align-items:start;column-count:auto}
 .archive-work{display:block;width:100%;max-width:none;margin:0;min-width:0}
 .archive-work>a{display:block}
-.archive-series-start{grid-column:1}
 .archive-media{display:flex;align-items:center;justify-content:center;width:100%;min-height:0}
 .archive-media img{width:auto;height:auto;max-width:min(100%,var(--image-max-width,100%),calc(80 * var(--physical-unit)));max-height:calc(80 * var(--physical-unit));margin-inline:auto;object-fit:contain}
 .archive-work.physical-preview .archive-media img{width:calc(var(--preview-width-units) * var(--physical-unit));height:auto;max-width:100%;max-height:none}
@@ -333,7 +332,8 @@ h1,h2,h3,p,button,input{font-weight:400}
  .artist-portrait{width:186px}
 }
 
-/* The idle cursor is local, tiny, and never replaces control affordances. */
-body.idle-skull-cursor {
- cursor:url("assets/cursor-skull.svg") 16 16,auto;
+body.idle-skull-cursor,body.idle-skull-cursor :hover{cursor:none!important}
+.skull-pointer{
+ position:fixed;z-index:1000;width:32px;height:32px;
+ transform:translate(-50%,-50%);pointer-events:none;
 }

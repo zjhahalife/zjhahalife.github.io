@@ -138,56 +138,72 @@
   dialog.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'&&active>0){event.preventDefault();show(active-1);}if(event.key==='ArrowRight'&&active<images.length-1){event.preventDefault();show(active+1);}});
 })();
 
-// A quiet cursor detail on empty space; normal controls keep their affordances.
+// Draw the resting pointer in the page so it also works in embedded browsers.
 (() => {
   'use strict';
-  const finePointer = window.matchMedia('(hover:hover) and (pointer:fine)');
+  const script = document.currentScript;
+  if (!script?.src) return;
+
   const idleClass = 'idle-skull-cursor';
-  const excluded = 'a, button, input, textarea, select, label, summary, '
+  const controls = 'button, input, textarea, select, label, summary, '
     + '[role="button"], [role="link"], [role="slider"], [contenteditable], '
-    + '.selected-spread, .year-works, .work-images, .lightbox, dialog, '
-    + '.site-menu, video, audio, iframe, canvas, img, picture';
-  let timer = 0;
-  let inside = false;
-  let pointerX = 0;
-  let pointerY = 0;
+    + 'nav, dialog, video, audio, iframe';
+  const skull = document.createElement('img');
+  skull.className = 'skull-pointer';
+  skull.alt = '';
+  skull.setAttribute('aria-hidden', 'true');
+  skull.hidden = true;
+  skull.src = new URL('assets/cursor-skull.svg', script.src).href;
+  document.body.append(skull);
+
+  let timer;
+  let pointer;
 
   function restoreCursor() {
-    window.clearTimeout(timer);
-    timer = 0;
+    clearTimeout(timer);
+    skull.hidden = true;
     document.body.classList.remove(idleClass);
   }
+
   function eligible(element) {
-    return finePointer.matches && inside && document.hasFocus()
-      && document.visibilityState === 'visible'
-      && !document.querySelector('dialog[open]')
-      && element instanceof Element && !element.closest(excluded);
+    if (!element || element.closest(controls)) return false;
+    const link = element.closest('a[href]');
+    return !link || link.matches('.cover-image, .archive-work > a, .publication-image');
   }
-  document.addEventListener('pointermove', event => {
+
+  function scheduleCursor() {
     restoreCursor();
-    if (event.pointerType !== 'mouse') return;
-    inside = true;
-    pointerX = event.clientX;
-    pointerY = event.clientY;
-    if (!eligible(event.target)) return;
-    timer = window.setTimeout(() => {
-      timer = 0;
-      if (eligible(document.elementFromPoint(pointerX, pointerY))) {
-        document.body.classList.add(idleClass);
-      }
-    }, 650);
-  }, {passive:true});
-  document.addEventListener('pointerdown', restoreCursor, {passive:true});
-  document.documentElement.addEventListener('pointerleave', () => {
-    inside = false;
+    if (!pointer || pointer.buttons) return;
+    timer = setTimeout(() => {
+      if (!skull.naturalWidth || document.visibilityState !== 'visible'
+        || document.querySelector('dialog[open]')
+        || !eligible(document.elementFromPoint(pointer.x, pointer.y))) return;
+      skull.style.left = `${pointer.x}px`;
+      skull.style.top = `${pointer.y}px`;
+      skull.hidden = false;
+      document.body.classList.add(idleClass);
+    }, 240);
+  }
+
+  function trackPointer(event) {
+    pointer = event.pointerType === 'mouse' ? {x: event.clientX, y: event.clientY, buttons: event.buttons} : undefined;
+    scheduleCursor();
+  }
+
+  function clearPointer() {
+    pointer = undefined;
     restoreCursor();
-  }, {passive:true});
-  window.addEventListener('blur', () => {
-    inside = false;
-    restoreCursor();
-  });
-  window.addEventListener('scroll', restoreCursor, {passive:true});
+  }
+
+  for (const type of ['pointerover', 'pointermove', 'pointerdown', 'pointerup']) {
+    document.addEventListener(type, trackPointer, {passive:true});
+  }
+  document.documentElement.addEventListener('pointerleave', clearPointer, {passive:true});
+  document.addEventListener('pointercancel', clearPointer, {passive:true});
+  window.addEventListener('blur', clearPointer);
+  window.addEventListener('scroll', scheduleCursor, {passive:true});
+  window.addEventListener('resize', scheduleCursor);
+  skull.addEventListener('load', scheduleCursor);
   document.addEventListener('keydown', restoreCursor);
   document.addEventListener('visibilitychange', restoreCursor);
-  finePointer.addEventListener('change', restoreCursor);
 })();

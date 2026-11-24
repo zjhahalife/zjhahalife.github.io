@@ -92,10 +92,10 @@ def page(title, section, content, description='', prefix=''):
             f'<meta property="og:title" content="{E(title)} — Zhou Jun">'
             f'<meta property="og:type" content="website"><meta name="theme-color" content="#eae8e4">'
             f'<link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml">'
-            f'<link rel="stylesheet" href="{prefix}styles.css?v=20.2">'
+            f'<link rel="stylesheet" href="{prefix}styles.css?v=20.3">'
             f'<link rel="stylesheet" href="{prefix}motion.css?v=20.1">'
             f'<link rel="stylesheet" href="{prefix}browse.css?v=20.1">'
-            f'<script defer src="{prefix}site.js?v=20.2"></script>'
+            f'<script defer src="{prefix}site.js?v=20.3"></script>'
             f'<script defer src="{prefix}motion.js?v=20.1"></script>'
             f'<script defer src="{prefix}browse.js?v=20.1"></script></head>'
             f'<body class="{section}-page" {physical}>{header(section, prefix)}'
@@ -132,7 +132,7 @@ visual_ids = [key for keys in PRESENTATION.get('visual_order_within_year', {}).v
 if visual_ids:
     rank = {key: index for index, key in enumerate(visual_ids)}
 
-def archive_card(w, number=0, series_start=False):
+def archive_card(w, number=0):
     im = w['web_images'][number]
     query = ' '.join([w['title'], w['year'], w['medium'], w['size']]).lower()
     display_year = str(year_number(w)) if year_number(w) >= 0 else 'Undated'
@@ -141,7 +141,7 @@ def archive_card(w, number=0, series_start=False):
     split = w['id'] in PRESENTATION.get('individual_image_cards', [])
     part = f'<p class="archive-part">Image {number+1} / {len(w["web_images"])}</p>' if split else ''
     href = w['url'] + (f'#image-{number+1}' if split else '')
-    cls = 'archive-work' + preview_class(w, number) + (' archive-series-start' if series_start else '')
+    cls = 'archive-work' + preview_class(w, number)
     return (f'<article class="{cls}" style="{image_limit(im)}{preview_style(w, number)}" '
             f'data-work-id="{w["id"]}" data-image-index="{number+1}" '
             f'data-category="{" ".join(w["categories"])}" data-search="{E(query)}"'
@@ -164,7 +164,7 @@ archive += '<section class="archive-grid year-works" data-physical-context="arch
 for w in ordered:
     split = w['id'] in PRESENTATION.get('individual_image_cards', [])
     for number in range(len(w['web_images']) if split else 1):
-        archive += archive_card(w, number, series_start=number == 0 and w['id'] in PRESENTATION.get('series_starts', []))
+        archive += archive_card(w, number)
 archive += '</section>'
 archive += '<p id="empty-state" hidden>No matching works.</p>'
 (SITE / 'works.html').write_text(page('Works', 'works', archive, 'The work index of Zhou Jun, 2023–2026.'), encoding='utf-8')

@@ -26,9 +26,9 @@ Presentation templates are in `tools/build.py`. Site typography and interactions
 are in `docs/styles.css` and `docs/site.js`. All artwork must remain complete and
 at its natural aspect ratio. Unknown facts must stay blank.
 
-`source/presentation.json` controls the visual order within each year, series
-starting positions and projects whose images use separate archive cards. The
-archive runs from the newest year to the oldest. A range uses its latest explicit
+`source/presentation.json` controls the visual order within each year and which
+projects use separate archive cards for individual images. Cards fill each row
+in order, from the newest year to the oldest. A range uses its latest explicit
 year for display and ordering; `present` does not introduce an inferred year.
 Original year strings remain in `source/site-content.json`.
 
@@ -46,6 +46,9 @@ and the archive's session-only category/search/scroll restoration. Check keyboar
 behaviour in text inputs, video players and the image viewer after changing
 navigation or selectors. Update the CSS/JavaScript query versions in
 `tools/build.py` when changing cached assets, then rebuild.
+
+The resting mouse pointer is drawn by `docs/site.js` and styled in
+`docs/styles.css`. The icon is `docs/assets/cursor-skull.svg`.
 
 After the final public URL is known, run:
 
