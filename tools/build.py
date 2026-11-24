@@ -51,11 +51,16 @@ icon = '<svg class="instagram-icon" aria-hidden="true" viewBox="0 0 24 24" fill=
 
 def mark(): return ''
 
+def image_limit(im):
+    maximum = im.get('display_max_width')
+    return f'--image-max-width:{int(maximum)}px;' if maximum else ''
+
 def image(w, number=0, prefix='', eager=False, thumbnail=False):
     im = w['web_images'][number]
     src = im['thumbnail'] if thumbnail else im['src']
     alt = ', '.join(part for part in [w['title'], w['year']] if part)
-    return f'<img src="{prefix}{src}" width="{im["width"]}" height="{im["height"]}" alt="{E(alt)}" loading="{"eager" if eager else "lazy"}" decoding="async">'
+    limit = f' data-display-max-width="{int(im["display_max_width"])}"' if im.get('display_max_width') else ''
+    return f'<img src="{prefix}{src}" width="{im["width"]}" height="{im["height"]}" alt="{E(alt)}" loading="{"eager" if eager else "lazy"}" decoding="async"{limit}>'
 
 def header(active, prefix=''):
     cats = ''.join(f'<a class="category-link" data-category="{slug}" href="{prefix}{"books.html" if slug == "books" else "works.html?category=" + slug}">{label}</a>' for slug, label in categories)
@@ -78,7 +83,7 @@ def cover_work(key, cls):
     w = byid[key]
     im = w['web_images'][0]
     year = f'<span class="cover-year">{E(w["year"])}</span>' if w['year'] else ''
-    return f'''<article class="cover-work {cls}" data-work="{key}" style="--art-ratio:{im['width']/im['height']:.8f}"><a class="cover-image" href="{w['url']}" aria-label="View {E(w['title'])}">{image(w, eager=True)}</a><div class="cover-caption"><div class="cover-caption-heading"><h2><a href="{w['url']}">{E(w['title'])}</a></h2>{year}</div><p>{E(w['medium'])}</p><p>{E(w['size'])}</p></div></article>'''
+    return f'''<article class="cover-work {cls}" data-work="{key}" style="--art-ratio:{im['width']/im['height']:.8f};{image_limit(im)}"><a class="cover-image" href="{w['url']}" aria-label="View {E(w['title'])}">{image(w, eager=True)}</a><div class="cover-caption"><div class="cover-caption-heading"><h2><a href="{w['url']}">{E(w['title'])}</a></h2>{year}</div><p>{E(w['medium'])}</p><p>{E(w['size'])}</p></div></article>'''
 
 home = '<h1 class="visually-hidden">Selected works by Zhou Jun</h1><div class="cover-running"><span>Selected paintings</span><a href="works.html?category=painting">All paintings</a></div>'
 home += '<section class="selected-spread" aria-label="Selected paintings">'
@@ -105,7 +110,7 @@ for w in ordered:
     query = ' '.join([w['title'], w['year'], w['medium'], w['size']]).lower()
     year = f'<span class="archive-year">{E(w["year"])}</span>' if w['year'] else ''
     size = f'<p class="archive-size">{E(w["size"])}</p>' if w['size'] else ''
-    archive += f'<article class="archive-work" data-category="{" ".join(w["categories"])}" data-search="{E(query)}"><a href="{w["url"]}"><span class="archive-media">{image(w, thumbnail=True)}{mark()}</span><div class="archive-caption-heading"><h3>{E(w["title"])}</h3>{year}</div><p class="archive-medium">{E(w["medium"])}</p>{size}</a></article>'
+    archive += f'<article class="archive-work" style="{image_limit(w["web_images"][0])}" data-category="{" ".join(w["categories"])}" data-search="{E(query)}"><a href="{w["url"]}"><span class="archive-media">{image(w, thumbnail=True)}{mark()}</span><div class="archive-caption-heading"><h3>{E(w["title"])}</h3>{year}</div><p class="archive-medium">{E(w["medium"])}</p>{size}</a></article>'
 archive += '</div></section>'
 archive += '<p id="empty-state" hidden>No matching works.</p>'
 (SITE / 'works.html').write_text(page('Works', 'works', archive, 'The work index of Zhou Jun, 2023–2026.'), encoding='utf-8')
@@ -177,7 +182,7 @@ for i, w in enumerate(ordered):
     body = '<div class="work-detail-layout"><div class="work-images" aria-label="Artwork images">'
     for n, im in enumerate(w['web_images']):
         ratio = im['width'] / im['height']
-        body += f'<figure class="work-frame" style="--image-ratio:{ratio:.8f}"><button class="work-image" type="button" data-zoom="../{im["src"]}" aria-label="Enlarge {E(w["title"])}, image {n+1}"><span class="detail-image-surface">{image(w, n, "../", eager=n==0)}</span></button>'
+        body += f'<figure class="work-frame" style="--image-ratio:{ratio:.8f};{image_limit(im)}"><button class="work-image" type="button" data-zoom="../{im["src"]}" aria-label="Enlarge {E(w["title"])}, image {n+1}"><span class="detail-image-surface">{image(w, n, "../", eager=n==0)}</span></button>'
         mobile_year = f'<span class="image-year">{E(w["year"])}</span>' if w['year'] else ''
         facts_class = 'image-caption-facts long-medium' if len(w['medium']) > 80 else 'image-caption-facts'
         body += f'<figcaption class="mobile-image-caption"><div class="image-caption-heading"><p class="image-caption-title">{E(w["title"])}</p>{mobile_year}</div><dl class="{facts_class}"><div><dt>Medium</dt><dd>{E(w["medium"])}</dd></div>'

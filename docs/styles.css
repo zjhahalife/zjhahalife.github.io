@@ -264,6 +264,14 @@ h1,h2,h3,p,button,input{font-weight:400}
 .lightbox-stage{touch-action:pan-y pinch-zoom}
 .work-text-heading{font:400 18px/1.4 var(--font);margin:25px 0 14px}
 .work-text-heading:first-child{margin-top:0}
+.cover-image,.cover-caption{max-width:min(100%,var(--image-max-width,100%))}
+.archive-work{max-width:min(100%,var(--image-max-width,100%))}
+.work-frame .detail-image-surface{max-width:min(100%,var(--image-max-width,100%))}
+@media(max-width:900px){
+ .work-frame>.work-image,.work-frame>.mobile-image-caption{width:min(78vw,calc((100svh - 300px)*var(--image-ratio)),var(--image-max-width,100vw))}
+ .image-caption-facts:not(.long-medium){grid-template-columns:repeat(auto-fit,minmax(min(100%,120px),1fr))}
+}
+.work-video video{width:auto;max-width:100%;height:auto;max-height:80svh;margin-inline:auto;background:transparent}
 @media(pointer:coarse){
  .instagram-link,.mobile-menu-toggle,.lightbox-toolbar button,.lightbox-controls button{min-width:44px;min-height:44px}
 }

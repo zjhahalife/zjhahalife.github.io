@@ -16,18 +16,18 @@
       ],
       "web_images": [
         {
-          "src": "assets/p01-01-display.svg",
-          "thumbnail": "assets/p01-01-display.svg",
-          "width": 1134,
-          "height": 1500,
+          "src": "assets/p01-01-borderless-v19.svg",
+          "thumbnail": "assets/p01-01-borderless-v19.svg",
+          "width": 1126,
+          "height": 1493,
           "original_src": "assets/p01-01.webp",
           "original_width": 1280,
           "original_height": 1707,
           "blank_margin_bounds": [
-            74,
-            103,
-            1208,
-            1603
+            77,
+            107,
+            1203,
+            1600
           ]
         }
       ],
@@ -44,12 +44,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p02-01.webp",
-          "thumbnail": "assets/p02-01-small.webp",
-          "width": 1136,
-          "height": 1136,
+          "src": "assets/p02-01-borderless-v19.svg",
+          "thumbnail": "assets/p02-01-borderless-v19.svg",
+          "width": 773,
+          "height": 968,
           "source_width": 1136,
-          "source_height": 1136
+          "source_height": 1136,
+          "original_src": "assets/p02-01.webp",
+          "original_width": 1136,
+          "original_height": 1136,
+          "blank_margin_bounds": [
+            181,
+            84,
+            954,
+            1052
+          ],
+          "display_max_width": 515
         }
       ],
       "url": "works/p02.html"
@@ -65,12 +75,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p03-01.webp",
-          "thumbnail": "assets/p03-01-small.webp",
-          "width": 960,
-          "height": 960,
+          "src": "assets/p03-01-borderless-v19.svg",
+          "thumbnail": "assets/p03-01-borderless-v19.svg",
+          "width": 653,
+          "height": 515,
           "source_width": 960,
-          "source_height": 960
+          "source_height": 960,
+          "original_src": "assets/p03-01.webp",
+          "original_width": 960,
+          "original_height": 960,
+          "blank_margin_bounds": [
+            153,
+            222,
+            806,
+            737
+          ],
+          "display_max_width": 435
         }
       ],
       "url": "works/p03.html"
@@ -86,12 +106,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p04-01.webp",
-          "thumbnail": "assets/p04-01-small.webp",
-          "width": 1116,
-          "height": 1116,
+          "src": "assets/p04-01-borderless-v19.svg",
+          "thumbnail": "assets/p04-01-borderless-v19.svg",
+          "width": 720,
+          "height": 533,
           "source_width": 1116,
-          "source_height": 1116
+          "source_height": 1116,
+          "original_src": "assets/p04-01.webp",
+          "original_width": 1116,
+          "original_height": 1116,
+          "blank_margin_bounds": [
+            198,
+            291,
+            918,
+            824
+          ],
+          "display_max_width": 480
         }
       ],
       "url": "works/p04.html"
@@ -107,12 +137,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p05-01.webp",
-          "thumbnail": "assets/p05-01-small.webp",
-          "width": 928,
-          "height": 1237,
+          "src": "assets/p05-01-borderless-v19.svg",
+          "thumbnail": "assets/p05-01-borderless-v19.svg",
+          "width": 786,
+          "height": 979,
           "source_width": 928,
-          "source_height": 1237
+          "source_height": 1237,
+          "original_src": "assets/p05-01.webp",
+          "original_width": 928,
+          "original_height": 1237,
+          "blank_margin_bounds": [
+            71,
+            128,
+            857,
+            1107
+          ],
+          "display_max_width": 524
         }
       ],
       "url": "works/p05.html"
@@ -128,12 +168,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p06-01.webp",
-          "thumbnail": "assets/p06-01-small.webp",
-          "width": 792,
-          "height": 792,
+          "src": "assets/p06-01-borderless-v19.svg",
+          "thumbnail": "assets/p06-01-borderless-v19.svg",
+          "width": 629,
+          "height": 498,
           "source_width": 792,
-          "source_height": 792
+          "source_height": 792,
+          "original_src": "assets/p06-01.webp",
+          "original_width": 792,
+          "original_height": 792,
+          "blank_margin_bounds": [
+            81,
+            147,
+            710,
+            645
+          ],
+          "display_max_width": 419
         }
       ],
       "url": "works/p06.html"
@@ -149,12 +199,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p07-01.webp",
-          "thumbnail": "assets/p07-01-small.webp",
-          "width": 892,
-          "height": 1190,
+          "src": "assets/p07-01-borderless-v19.svg",
+          "thumbnail": "assets/p07-01-borderless-v19.svg",
+          "width": 760,
+          "height": 1013,
           "source_width": 892,
-          "source_height": 1190
+          "source_height": 1190,
+          "original_src": "assets/p07-01.webp",
+          "original_width": 892,
+          "original_height": 1190,
+          "blank_margin_bounds": [
+            66,
+            88,
+            826,
+            1101
+          ],
+          "display_max_width": 506
         }
       ],
       "url": "works/p07.html"
@@ -170,12 +230,21 @@
       ],
       "web_images": [
         {
-          "src": "assets/p08-01.webp",
-          "thumbnail": "assets/p08-01-small.webp",
-          "width": 1800,
-          "height": 1800,
+          "src": "assets/p08-01-borderless-v19.svg",
+          "thumbnail": "assets/p08-01-borderless-v19.svg",
+          "width": 1607,
+          "height": 2011,
           "source_width": 3233,
-          "source_height": 3233
+          "source_height": 3233,
+          "original_src": "assets/p08-01-native.jpg",
+          "original_width": 3233,
+          "original_height": 3233,
+          "blank_margin_bounds": [
+            813,
+            611,
+            2420,
+            2622
+          ]
         }
       ],
       "url": "works/p08.html"
@@ -191,12 +260,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p09-01.webp",
-          "thumbnail": "assets/p09-01-small.webp",
-          "width": 674,
-          "height": 892,
+          "src": "assets/p09-01-borderless-v19.svg",
+          "thumbnail": "assets/p09-01-borderless-v19.svg",
+          "width": 666,
+          "height": 883,
           "source_width": 674,
-          "source_height": 892
+          "source_height": 892,
+          "original_src": "assets/p09-01.webp",
+          "original_width": 674,
+          "original_height": 892,
+          "blank_margin_bounds": [
+            5,
+            5,
+            671,
+            888
+          ],
+          "display_max_width": 444
         }
       ],
       "url": "works/p09.html"
@@ -212,12 +291,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p10-01.webp",
-          "thumbnail": "assets/p10-01-small.webp",
-          "width": 509,
-          "height": 509,
+          "src": "assets/p10-01-borderless-v19.svg",
+          "thumbnail": "assets/p10-01-borderless-v19.svg",
+          "width": 451,
+          "height": 349,
           "source_width": 509,
-          "source_height": 509
+          "source_height": 509,
+          "original_src": "assets/p10-01.webp",
+          "original_width": 509,
+          "original_height": 509,
+          "blank_margin_bounds": [
+            29,
+            80,
+            480,
+            429
+          ],
+          "display_max_width": 300
         }
       ],
       "url": "works/p10.html"
@@ -233,12 +322,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p11-01.webp",
-          "thumbnail": "assets/p11-01-small.webp",
-          "width": 660,
-          "height": 499,
+          "src": "assets/p11-01-borderless-v19.svg",
+          "thumbnail": "assets/p11-01-borderless-v19.svg",
+          "width": 652,
+          "height": 490,
           "source_width": 660,
-          "source_height": 499
+          "source_height": 499,
+          "original_src": "assets/p11-01.webp",
+          "original_width": 660,
+          "original_height": 499,
+          "blank_margin_bounds": [
+            4,
+            5,
+            656,
+            495
+          ],
+          "display_max_width": 434
         }
       ],
       "url": "works/p11.html"
@@ -254,12 +353,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p12-01.webp",
-          "thumbnail": "assets/p12-01-small.webp",
-          "width": 394,
-          "height": 526,
+          "src": "assets/p12-01-borderless-v19.svg",
+          "thumbnail": "assets/p12-01-borderless-v19.svg",
+          "width": 254,
+          "height": 324,
           "source_width": 394,
-          "source_height": 526
+          "source_height": 526,
+          "original_src": "assets/p12-01.webp",
+          "original_width": 394,
+          "original_height": 526,
+          "blank_margin_bounds": [
+            70,
+            101,
+            324,
+            425
+          ],
+          "display_max_width": 169
         }
       ],
       "url": "works/p12.html"
@@ -275,12 +384,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p13-01.webp",
-          "thumbnail": "assets/p13-01-small.webp",
-          "width": 770,
-          "height": 770,
+          "src": "assets/p13-01-borderless-v19.svg",
+          "thumbnail": "assets/p13-01-borderless-v19.svg",
+          "width": 507,
+          "height": 636,
           "source_width": 770,
-          "source_height": 770
+          "source_height": 770,
+          "original_src": "assets/p13-01.webp",
+          "original_width": 770,
+          "original_height": 770,
+          "blank_margin_bounds": [
+            142,
+            60,
+            649,
+            696
+          ],
+          "display_max_width": 338
         }
       ],
       "url": "works/p13.html"
@@ -296,12 +415,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p14-01.webp",
-          "thumbnail": "assets/p14-01-small.webp",
-          "width": 673,
-          "height": 846,
+          "src": "assets/p14-01-borderless-v19.svg",
+          "thumbnail": "assets/p14-01-borderless-v19.svg",
+          "width": 663,
+          "height": 838,
           "source_width": 673,
-          "source_height": 846
+          "source_height": 846,
+          "original_src": "assets/p14-01.webp",
+          "original_width": 673,
+          "original_height": 846,
+          "blank_margin_bounds": [
+            5,
+            5,
+            668,
+            843
+          ],
+          "display_max_width": 442
         }
       ],
       "url": "works/p14.html"
@@ -317,12 +446,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p15-01.webp",
-          "thumbnail": "assets/p15-01-small.webp",
-          "width": 478,
-          "height": 606,
+          "src": "assets/p15-01-borderless-v19.svg",
+          "thumbnail": "assets/p15-01-borderless-v19.svg",
+          "width": 469,
+          "height": 599,
           "source_width": 478,
-          "source_height": 606
+          "source_height": 606,
+          "original_src": "assets/p15-01.webp",
+          "original_width": 478,
+          "original_height": 606,
+          "blank_margin_bounds": [
+            4,
+            4,
+            473,
+            603
+          ],
+          "display_max_width": 312
         }
       ],
       "url": "works/p15.html"
@@ -338,12 +477,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p16-01.webp",
-          "thumbnail": "assets/p16-01-small.webp",
-          "width": 644,
-          "height": 514,
+          "src": "assets/p16-01-borderless-v19.svg",
+          "thumbnail": "assets/p16-01-borderless-v19.svg",
+          "width": 522,
+          "height": 393,
           "source_width": 644,
-          "source_height": 514
+          "source_height": 514,
+          "original_src": "assets/p16-01.webp",
+          "original_width": 644,
+          "original_height": 514,
+          "blank_margin_bounds": [
+            62,
+            55,
+            584,
+            448
+          ],
+          "display_max_width": 348
         }
       ],
       "url": "works/p16.html"
@@ -359,20 +508,38 @@
       ],
       "web_images": [
         {
-          "src": "assets/p17-01.webp",
-          "thumbnail": "assets/p17-01-small.webp",
-          "width": 1800,
-          "height": 1709,
+          "src": "assets/p17-01-borderless-v19.svg",
+          "thumbnail": "assets/p17-01-borderless-v19.svg",
+          "width": 2453,
+          "height": 1929,
           "source_width": 3393,
-          "source_height": 3221
+          "source_height": 3221,
+          "original_src": "assets/p17-01-native.jpg",
+          "original_width": 3393,
+          "original_height": 3221,
+          "blank_margin_bounds": [
+            465,
+            638,
+            2918,
+            2567
+          ]
         },
         {
-          "src": "assets/p17-02.webp",
-          "thumbnail": "assets/p17-02-small.webp",
-          "width": 1494,
-          "height": 1800,
+          "src": "assets/p17-02-borderless-v19.svg",
+          "thumbnail": "assets/p17-02-borderless-v19.svg",
+          "width": 2164,
+          "height": 2784,
           "source_width": 2987,
-          "source_height": 3600
+          "source_height": 3600,
+          "original_src": "assets/p17-02-native.jpg",
+          "original_width": 2987,
+          "original_height": 3600,
+          "blank_margin_bounds": [
+            407,
+            408,
+            2571,
+            3192
+          ]
         }
       ],
       "url": "works/p17.html"
@@ -388,12 +555,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p18-01.webp",
-          "thumbnail": "assets/p18-01-small.webp",
-          "width": 841,
-          "height": 665,
+          "src": "assets/p18-01-borderless-v19.svg",
+          "thumbnail": "assets/p18-01-borderless-v19.svg",
+          "width": 726,
+          "height": 544,
           "source_width": 841,
-          "source_height": 665
+          "source_height": 665,
+          "original_src": "assets/p18-01.webp",
+          "original_width": 841,
+          "original_height": 665,
+          "blank_margin_bounds": [
+            55,
+            47,
+            781,
+            591
+          ],
+          "display_max_width": 484
         }
       ],
       "url": "works/p18.html"
@@ -409,12 +586,21 @@
       ],
       "web_images": [
         {
-          "src": "assets/p19-01.webp",
-          "thumbnail": "assets/p19-01-small.webp",
-          "width": 1350,
-          "height": 1800,
+          "src": "assets/p19-01-borderless-v19.svg",
+          "thumbnail": "assets/p19-01-borderless-v19.svg",
+          "width": 1986,
+          "height": 2680,
           "source_width": 2700,
-          "source_height": 3600
+          "source_height": 3600,
+          "original_src": "assets/p19-01-native.jpg",
+          "original_width": 2700,
+          "original_height": 3600,
+          "blank_margin_bounds": [
+            357,
+            460,
+            2343,
+            3140
+          ]
         }
       ],
       "url": "works/p19.html"
@@ -430,12 +616,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p20-01.webp",
-          "thumbnail": "assets/p20-01-small.webp",
-          "width": 649,
-          "height": 522,
+          "src": "assets/p20-01-borderless-v19.svg",
+          "thumbnail": "assets/p20-01-borderless-v19.svg",
+          "width": 465,
+          "height": 353,
           "source_width": 649,
-          "source_height": 522
+          "source_height": 522,
+          "original_src": "assets/p20-01.webp",
+          "original_width": 649,
+          "original_height": 522,
+          "blank_margin_bounds": [
+            96,
+            77,
+            561,
+            430
+          ],
+          "display_max_width": 310
         }
       ],
       "url": "works/p20.html"
@@ -451,12 +647,21 @@
       ],
       "web_images": [
         {
-          "src": "assets/p21-01.webp",
-          "thumbnail": "assets/p21-01-small.webp",
-          "width": 1478,
-          "height": 1800,
+          "src": "assets/p21-01-borderless-v19.svg",
+          "thumbnail": "assets/p21-01-borderless-v19.svg",
+          "width": 2226,
+          "height": 2966,
           "source_width": 2956,
-          "source_height": 3600
+          "source_height": 3600,
+          "original_src": "assets/p21-01-native.jpg",
+          "original_width": 2956,
+          "original_height": 3600,
+          "blank_margin_bounds": [
+            371,
+            317,
+            2597,
+            3283
+          ]
         }
       ],
       "url": "works/p21.html"
@@ -472,12 +677,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p22-01.webp",
-          "thumbnail": "assets/p22-01-small.webp",
-          "width": 687,
-          "height": 687,
+          "src": "assets/p22-01-borderless-v19.svg",
+          "thumbnail": "assets/p22-01-borderless-v19.svg",
+          "width": 545,
+          "height": 401,
           "source_width": 687,
-          "source_height": 687
+          "source_height": 687,
+          "original_src": "assets/p22-01.webp",
+          "original_width": 687,
+          "original_height": 687,
+          "blank_margin_bounds": [
+            72,
+            143,
+            617,
+            544
+          ],
+          "display_max_width": 363
         }
       ],
       "url": "works/p22.html"
@@ -493,12 +708,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p23-01.webp",
-          "thumbnail": "assets/p23-01-small.webp",
-          "width": 593,
-          "height": 481,
+          "src": "assets/p23-01-borderless-v19.svg",
+          "thumbnail": "assets/p23-01-borderless-v19.svg",
+          "width": 502,
+          "height": 395,
           "source_width": 593,
-          "source_height": 481
+          "source_height": 481,
+          "original_src": "assets/p23-01.webp",
+          "original_width": 593,
+          "original_height": 481,
+          "blank_margin_bounds": [
+            43,
+            41,
+            545,
+            436
+          ],
+          "display_max_width": 334
         }
       ],
       "url": "works/p23.html"
@@ -514,12 +739,21 @@
       ],
       "web_images": [
         {
-          "src": "assets/p24-01.webp",
-          "thumbnail": "assets/p24-01-small.webp",
-          "width": 1350,
-          "height": 1800,
+          "src": "assets/p24-01-borderless-v19.svg",
+          "thumbnail": "assets/p24-01-borderless-v19.svg",
+          "width": 2220,
+          "height": 2970,
           "source_width": 2700,
-          "source_height": 3600
+          "source_height": 3600,
+          "original_src": "assets/p24-01-native.jpg",
+          "original_width": 2700,
+          "original_height": 3600,
+          "blank_margin_bounds": [
+            240,
+            315,
+            2460,
+            3285
+          ]
         }
       ],
       "url": "works/p24.html"
@@ -535,12 +769,21 @@
       ],
       "web_images": [
         {
-          "src": "assets/p25-01.webp",
-          "thumbnail": "assets/p25-01-small.webp",
-          "width": 1800,
-          "height": 1800,
+          "src": "assets/p25-01-borderless-v19.svg",
+          "thumbnail": "assets/p25-01-borderless-v19.svg",
+          "width": 3088,
+          "height": 2382,
           "source_width": 3600,
-          "source_height": 3600
+          "source_height": 3600,
+          "original_src": "assets/p25-01-native.jpg",
+          "original_width": 3600,
+          "original_height": 3600,
+          "blank_margin_bounds": [
+            256,
+            609,
+            3344,
+            2991
+          ]
         }
       ],
       "url": "works/p25.html"
@@ -556,12 +799,21 @@
       ],
       "web_images": [
         {
-          "src": "assets/p26-01.webp",
-          "thumbnail": "assets/p26-01-small.webp",
-          "width": 1800,
-          "height": 1800,
+          "src": "assets/p26-01-borderless-v19.svg",
+          "thumbnail": "assets/p26-01-borderless-v19.svg",
+          "width": 2436,
+          "height": 3294,
           "source_width": 3600,
-          "source_height": 3600
+          "source_height": 3600,
+          "original_src": "assets/p26-01-native.jpg",
+          "original_width": 3600,
+          "original_height": 3600,
+          "blank_margin_bounds": [
+            582,
+            153,
+            3018,
+            3447
+          ]
         }
       ],
       "url": "works/p26.html"
@@ -577,12 +829,21 @@
       ],
       "web_images": [
         {
-          "src": "assets/p27-01.webp",
-          "thumbnail": "assets/p27-01-small.webp",
-          "width": 1800,
-          "height": 1800,
+          "src": "assets/p27-01-borderless-v19.svg",
+          "thumbnail": "assets/p27-01-borderless-v19.svg",
+          "width": 2460,
+          "height": 3154,
           "source_width": 3600,
-          "source_height": 3600
+          "source_height": 3600,
+          "original_src": "assets/p27-01-native.jpg",
+          "original_width": 3600,
+          "original_height": 3600,
+          "blank_margin_bounds": [
+            570,
+            223,
+            3030,
+            3377
+          ]
         }
       ],
       "url": "works/p27.html"
@@ -598,12 +859,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p28-01.webp",
-          "thumbnail": "assets/p28-01-small.webp",
-          "width": 565,
-          "height": 762,
+          "src": "assets/p28-01-borderless-v19.svg",
+          "thumbnail": "assets/p28-01-borderless-v19.svg",
+          "width": 461,
+          "height": 614,
           "source_width": 565,
-          "source_height": 762
+          "source_height": 762,
+          "original_src": "assets/p28-01.webp",
+          "original_width": 565,
+          "original_height": 762,
+          "blank_margin_bounds": [
+            58,
+            73,
+            519,
+            687
+          ],
+          "display_max_width": 307
         }
       ],
       "url": "works/p28.html"
@@ -619,12 +890,21 @@
       ],
       "web_images": [
         {
-          "src": "assets/p29-01.webp",
-          "thumbnail": "assets/p29-01-small.webp",
-          "width": 1800,
-          "height": 1800,
+          "src": "assets/p29-01-borderless-v19.svg",
+          "thumbnail": "assets/p29-01-borderless-v19.svg",
+          "width": 2352,
+          "height": 3131,
           "source_width": 3600,
-          "source_height": 3600
+          "source_height": 3600,
+          "original_src": "assets/p29-01-native.jpg",
+          "original_width": 3600,
+          "original_height": 3600,
+          "blank_margin_bounds": [
+            624,
+            235,
+            2976,
+            3366
+          ]
         }
       ],
       "url": "works/p29.html"
@@ -640,12 +920,21 @@
       ],
       "web_images": [
         {
-          "src": "assets/p30-01.webp",
-          "thumbnail": "assets/p30-01-small.webp",
-          "width": 1800,
-          "height": 1723,
-          "source_width": 3600,
-          "source_height": 3446
+          "src": "assets/p30-01-borderless-v19.svg",
+          "thumbnail": "assets/p30-01-borderless-v19.svg",
+          "width": 3719,
+          "height": 3516,
+          "source_width": 4096,
+          "source_height": 3921,
+          "original_src": "assets/p30-01-native.jpg",
+          "original_width": 4096,
+          "original_height": 3921,
+          "blank_margin_bounds": [
+            237,
+            209,
+            3956,
+            3725
+          ]
         }
       ],
       "url": "works/p30.html"
@@ -661,12 +950,21 @@
       ],
       "web_images": [
         {
-          "src": "assets/p31-01.webp",
-          "thumbnail": "assets/p31-01-small.webp",
-          "width": 1800,
-          "height": 1800,
+          "src": "assets/p31-01-borderless-v19.svg",
+          "thumbnail": "assets/p31-01-borderless-v19.svg",
+          "width": 1988,
+          "height": 3096,
           "source_width": 3600,
-          "source_height": 3600
+          "source_height": 3600,
+          "original_src": "assets/p31-01-native.jpg",
+          "original_width": 3600,
+          "original_height": 3600,
+          "blank_margin_bounds": [
+            806,
+            252,
+            2794,
+            3348
+          ]
         }
       ],
       "url": "works/p31.html"
@@ -682,12 +980,21 @@
       ],
       "web_images": [
         {
-          "src": "assets/p32-01.webp",
-          "thumbnail": "assets/p32-01-small.webp",
-          "width": 1800,
-          "height": 1800,
+          "src": "assets/p32-01-borderless-v19.svg",
+          "thumbnail": "assets/p32-01-borderless-v19.svg",
+          "width": 3262,
+          "height": 3174,
           "source_width": 3600,
-          "source_height": 3600
+          "source_height": 3600,
+          "original_src": "assets/p32-01-native.jpg",
+          "original_width": 3600,
+          "original_height": 3600,
+          "blank_margin_bounds": [
+            169,
+            213,
+            3431,
+            3387
+          ]
         }
       ],
       "url": "works/p32.html"
@@ -703,12 +1010,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p33-01.webp",
-          "thumbnail": "assets/p33-01-small.webp",
-          "width": 452,
-          "height": 473,
+          "src": "assets/p33-01-borderless-v19.svg",
+          "thumbnail": "assets/p33-01-borderless-v19.svg",
+          "width": 349,
+          "height": 348,
           "source_width": 452,
-          "source_height": 473
+          "source_height": 473,
+          "original_src": "assets/p33-01.webp",
+          "original_width": 452,
+          "original_height": 473,
+          "blank_margin_bounds": [
+            49,
+            52,
+            398,
+            400
+          ],
+          "display_max_width": 232
         }
       ],
       "url": "works/p33.html"
@@ -724,12 +1041,22 @@
       ],
       "web_images": [
         {
-          "src": "assets/p34-01.webp",
-          "thumbnail": "assets/p34-01-small.webp",
-          "width": 664,
-          "height": 883,
+          "src": "assets/p34-01-borderless-v19.svg",
+          "thumbnail": "assets/p34-01-borderless-v19.svg",
+          "width": 632,
+          "height": 832,
           "source_width": 664,
-          "source_height": 883
+          "source_height": 883,
+          "original_src": "assets/p34-01.webp",
+          "original_width": 664,
+          "original_height": 883,
+          "blank_margin_bounds": [
+            18,
+            19,
+            650,
+            851
+          ],
+          "display_max_width": 421
         }
       ],
       "url": "works/p34.html"
@@ -753,18 +1080,18 @@
           "source_height": 1024
         },
         {
-          "src": "assets/i01-02.webp",
-          "thumbnail": "assets/i01-02-small.webp",
-          "width": 1800,
-          "height": 1800,
+          "src": "assets/i01-02-native.jpg",
+          "thumbnail": "assets/i01-02-native.jpg",
+          "width": 3600,
+          "height": 3600,
           "source_width": 3600,
           "source_height": 3600
         },
         {
-          "src": "assets/i01-03.webp",
-          "thumbnail": "assets/i01-03-small.webp",
-          "width": 1800,
-          "height": 1800,
+          "src": "assets/i01-03-native.jpg",
+          "thumbnail": "assets/i01-03-native.jpg",
+          "width": 3600,
+          "height": 3600,
           "source_width": 3600,
           "source_height": 3600
         }
@@ -808,7 +1135,8 @@
           "width": 904,
           "height": 603,
           "source_width": 904,
-          "source_height": 603
+          "source_height": 603,
+          "display_max_width": 602
         },
         {
           "src": "assets/i02-02.webp",
@@ -816,7 +1144,8 @@
           "width": 851,
           "height": 851,
           "source_width": 851,
-          "source_height": 851
+          "source_height": 851,
+          "display_max_width": 567
         }
       ],
       "url": "works/i02.html",
@@ -850,10 +1179,10 @@
       ],
       "web_images": [
         {
-          "src": "assets/i03-01.webp",
-          "thumbnail": "assets/i03-01-small.webp",
-          "width": 793,
-          "height": 1800,
+          "src": "assets/i03-01-native.jpg",
+          "thumbnail": "assets/i03-01-native.jpg",
+          "width": 1280,
+          "height": 2906,
           "source_width": 1280,
           "source_height": 2906
         },
@@ -863,7 +1192,8 @@
           "width": 550,
           "height": 550,
           "source_width": 550,
-          "source_height": 550
+          "source_height": 550,
+          "display_max_width": 366
         },
         {
           "src": "assets/i03-03.webp",
@@ -871,7 +1201,8 @@
           "width": 560,
           "height": 383,
           "source_width": 560,
-          "source_height": 383
+          "source_height": 383,
+          "display_max_width": 373
         }
       ],
       "url": "works/i03.html",
@@ -908,7 +1239,8 @@
           "width": 516,
           "height": 387,
           "source_width": 516,
-          "source_height": 387
+          "source_height": 387,
+          "display_max_width": 344
         }
       ],
       "url": "works/i04.html",
@@ -938,7 +1270,8 @@
           "width": 801,
           "height": 459,
           "source_width": 801,
-          "source_height": 459
+          "source_height": 459,
+          "display_max_width": 534
         }
       ],
       "url": "works/i05.html",
@@ -981,7 +1314,8 @@
           "width": 768,
           "height": 507,
           "source_width": 768,
-          "source_height": 507
+          "source_height": 507,
+          "display_max_width": 512
         },
         {
           "src": "assets/i06-02.webp",
@@ -989,7 +1323,8 @@
           "width": 554,
           "height": 386,
           "source_width": 554,
-          "source_height": 386
+          "source_height": 386,
+          "display_max_width": 369
         }
       ],
       "url": "works/i06.html",
@@ -1019,7 +1354,8 @@
           "width": 763,
           "height": 746,
           "source_width": 763,
-          "source_height": 746
+          "source_height": 746,
+          "display_max_width": 508
         }
       ],
       "url": "works/i07.html"
@@ -1044,28 +1380,28 @@
           "source_height": 1657
         },
         {
-          "src": "assets/b01-02.webp",
-          "thumbnail": "assets/b01-02-small.webp",
-          "width": 1800,
-          "height": 1200,
-          "source_width": 3600,
-          "source_height": 2400
+          "src": "assets/b01-02-native.jpg",
+          "thumbnail": "assets/b01-02-native.jpg",
+          "width": 6715,
+          "height": 4477,
+          "source_width": 6715,
+          "source_height": 4477
         },
         {
-          "src": "assets/b01-03.webp",
-          "thumbnail": "assets/b01-03-small.webp",
-          "width": 1800,
-          "height": 1200,
-          "source_width": 3600,
-          "source_height": 2400
+          "src": "assets/b01-03-native.jpg",
+          "thumbnail": "assets/b01-03-native.jpg",
+          "width": 6715,
+          "height": 4477,
+          "source_width": 6715,
+          "source_height": 4477
         },
         {
-          "src": "assets/b01-04.webp",
-          "thumbnail": "assets/b01-04-small.webp",
-          "width": 1800,
-          "height": 1200,
-          "source_width": 3600,
-          "source_height": 2400
+          "src": "assets/b01-04-native.jpg",
+          "thumbnail": "assets/b01-04-native.jpg",
+          "width": 6649,
+          "height": 4433,
+          "source_width": 6649,
+          "source_height": 4433
         },
         {
           "src": "assets/b01-05.webp",
@@ -1073,7 +1409,8 @@
           "width": 577,
           "height": 795,
           "source_width": 577,
-          "source_height": 795
+          "source_height": 795,
+          "display_max_width": 384
         },
         {
           "src": "assets/b01-06.webp",
@@ -1081,7 +1418,8 @@
           "width": 616,
           "height": 821,
           "source_width": 616,
-          "source_height": 821
+          "source_height": 821,
+          "display_max_width": 410
         }
       ],
       "url": "works/b01.html",
@@ -1104,12 +1442,12 @@
       "production_date": "July 11, 2025",
       "publishing_method": "Self-published",
       "video": {
-        "src": "assets/video/b01.mp4",
+        "src": "assets/video/b01-borderless.mp4",
         "type": "video/mp4",
-        "duration_seconds": 14.002,
+        "duration_seconds": 14.001,
         "duration_label": "14 sec",
-        "width": 960,
-        "height": 720,
+        "width": 1412,
+        "height": 1004,
         "has_audio": true,
         "label": "Book preview"
       },
@@ -1156,7 +1494,8 @@
           "width": 488,
           "height": 358,
           "source_width": 488,
-          "source_height": 358
+          "source_height": 358,
+          "display_max_width": 325
         },
         {
           "src": "assets/v01-05.webp",
@@ -1164,7 +1503,8 @@
           "width": 182,
           "height": 240,
           "source_width": 182,
-          "source_height": 240
+          "source_height": 240,
+          "display_max_width": 121
         }
       ],
       "url": "works/v01.html",
@@ -1208,12 +1548,42 @@
       ],
       "web_images": [
         {
-          "src": "assets/v02-01.webp",
-          "thumbnail": "assets/v02-01-small.webp",
+          "src": "assets/v02-01-clean-white-v19.svg",
+          "thumbnail": "assets/v02-01-clean-white-v19.svg",
           "width": 1076,
           "height": 1309,
           "source_width": 1076,
-          "source_height": 1309
+          "source_height": 1309,
+          "original_src": "assets/v02-01.webp",
+          "original_width": 1076,
+          "original_height": 1309,
+          "photo_panel_bounds": [
+            [
+              122,
+              270,
+              398,
+              681
+            ],
+            [
+              639,
+              73,
+              954,
+              542
+            ],
+            [
+              119,
+              836,
+              397,
+              1250
+            ],
+            [
+              640,
+              719,
+              956,
+              1187
+            ]
+          ],
+          "display_max_width": 717
         }
       ],
       "url": "works/v02.html",
@@ -1240,7 +1610,8 @@
           "width": 1081,
           "height": 654,
           "source_width": 1081,
-          "source_height": 654
+          "source_height": 654,
+          "display_max_width": 720
         },
         {
           "src": "assets/v03-02.webp",
@@ -1248,7 +1619,8 @@
           "width": 478,
           "height": 270,
           "source_width": 478,
-          "source_height": 270
+          "source_height": 270,
+          "display_max_width": 318
         }
       ],
       "url": "works/v03.html",
@@ -1276,7 +1648,8 @@
           "width": 734,
           "height": 464,
           "source_width": 734,
-          "source_height": 464
+          "source_height": 464,
+          "display_max_width": 489
         },
         {
           "src": "assets/v04-02.webp",
@@ -1284,7 +1657,8 @@
           "width": 800,
           "height": 478,
           "source_width": 800,
-          "source_height": 478
+          "source_height": 478,
+          "display_max_width": 533
         }
       ],
       "url": "works/v04.html",
@@ -1314,7 +1688,8 @@
           "width": 454,
           "height": 293,
           "source_width": 454,
-          "source_height": 293
+          "source_height": 293,
+          "display_max_width": 302
         },
         {
           "src": "assets/v05-02.webp",
@@ -1322,7 +1697,8 @@
           "width": 465,
           "height": 292,
           "source_width": 465,
-          "source_height": 292
+          "source_height": 292,
+          "display_max_width": 310
         },
         {
           "src": "assets/v05-03.webp",
@@ -1330,7 +1706,8 @@
           "width": 342,
           "height": 342,
           "source_width": 342,
-          "source_height": 342
+          "source_height": 342,
+          "display_max_width": 228
         },
         {
           "src": "assets/v05-04.webp",
@@ -1338,7 +1715,8 @@
           "width": 448,
           "height": 291,
           "source_width": 448,
-          "source_height": 291
+          "source_height": 291,
+          "display_max_width": 298
         }
       ],
       "url": "works/v05.html",
@@ -1377,7 +1755,8 @@
           "width": 402,
           "height": 314,
           "source_width": 402,
-          "source_height": 314
+          "source_height": 314,
+          "display_max_width": 268
         }
       ],
       "url": "works/v06.html",
@@ -1398,10 +1777,10 @@
       ],
       "web_images": [
         {
-          "src": "assets/p35-01.webp",
-          "thumbnail": "assets/p35-01-small.webp",
-          "width": 1437,
-          "height": 1800,
+          "src": "assets/p35-01-native.jpg",
+          "thumbnail": "assets/p35-01-native.jpg",
+          "width": 1916,
+          "height": 2400,
           "source_width": 1916,
           "source_height": 2400
         }
@@ -1419,10 +1798,10 @@
       ],
       "web_images": [
         {
-          "src": "assets/p36-01.webp",
-          "thumbnail": "assets/p36-01-small.webp",
-          "width": 1800,
-          "height": 1355,
+          "src": "assets/p36-01-native.jpg",
+          "thumbnail": "assets/p36-01-native.jpg",
+          "width": 2400,
+          "height": 1807,
           "source_width": 2400,
           "source_height": 1807
         }
@@ -1440,10 +1819,10 @@
       ],
       "web_images": [
         {
-          "src": "assets/p37-01.webp",
-          "thumbnail": "assets/p37-01-small.webp",
-          "width": 1800,
-          "height": 1355,
+          "src": "assets/p37-01-native.jpg",
+          "thumbnail": "assets/p37-01-native.jpg",
+          "width": 2400,
+          "height": 1806,
           "source_width": 2400,
           "source_height": 1806
         }
@@ -1461,10 +1840,10 @@
       ],
       "web_images": [
         {
-          "src": "assets/p38-01.webp",
-          "thumbnail": "assets/p38-01-small.webp",
-          "width": 1800,
-          "height": 1351,
+          "src": "assets/p38-01-native.jpg",
+          "thumbnail": "assets/p38-01-native.jpg",
+          "width": 2400,
+          "height": 1801,
           "source_width": 2400,
           "source_height": 1801
         }
@@ -1543,19 +1922,20 @@
       ],
       "web_images": [
         {
-          "src": "assets/p39-01-display.svg",
-          "thumbnail": "assets/p39-01-display.svg",
-          "width": 891,
-          "height": 1112,
+          "src": "assets/p39-01-borderless-v19.svg",
+          "thumbnail": "assets/p39-01-borderless-v19.svg",
+          "width": 888,
+          "height": 1108,
           "original_src": "assets/p39-01-original.jpg",
           "original_width": 960,
           "original_height": 1280,
           "blank_margin_bounds": [
-            37,
-            85,
-            928,
-            1197
-          ]
+            38,
+            86,
+            926,
+            1194
+          ],
+          "display_max_width": 592
         }
       ],
       "url": "works/p39.html"
