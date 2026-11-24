@@ -332,3 +332,8 @@ h1,h2,h3,p,button,input{font-weight:400}
  .works-page[data-archive-mode="documentation"] .archive-media img{max-height:min(78vw,340px)}
  .artist-portrait{width:186px}
 }
+
+/* The idle cursor is local, tiny, and never replaces control affordances. */
+body.idle-skull-cursor {
+ cursor:url("assets/cursor-skull.svg") 16 16,auto;
+}

@@ -137,3 +137,57 @@
   stage.addEventListener('pointercancel',()=>{touchStart=undefined;});
   dialog.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'&&active>0){event.preventDefault();show(active-1);}if(event.key==='ArrowRight'&&active<images.length-1){event.preventDefault();show(active+1);}});
 })();
+
+// A quiet cursor detail on empty space; normal controls keep their affordances.
+(() => {
+  'use strict';
+  const finePointer = window.matchMedia('(hover:hover) and (pointer:fine)');
+  const idleClass = 'idle-skull-cursor';
+  const excluded = 'a, button, input, textarea, select, label, summary, '
+    + '[role="button"], [role="link"], [role="slider"], [contenteditable], '
+    + '.selected-spread, .year-works, .work-images, .lightbox, dialog, '
+    + '.site-menu, video, audio, iframe, canvas, img, picture';
+  let timer = 0;
+  let inside = false;
+  let pointerX = 0;
+  let pointerY = 0;
+
+  function restoreCursor() {
+    window.clearTimeout(timer);
+    timer = 0;
+    document.body.classList.remove(idleClass);
+  }
+  function eligible(element) {
+    return finePointer.matches && inside && document.hasFocus()
+      && document.visibilityState === 'visible'
+      && !document.querySelector('dialog[open]')
+      && element instanceof Element && !element.closest(excluded);
+  }
+  document.addEventListener('pointermove', event => {
+    restoreCursor();
+    if (event.pointerType !== 'mouse') return;
+    inside = true;
+    pointerX = event.clientX;
+    pointerY = event.clientY;
+    if (!eligible(event.target)) return;
+    timer = window.setTimeout(() => {
+      timer = 0;
+      if (eligible(document.elementFromPoint(pointerX, pointerY))) {
+        document.body.classList.add(idleClass);
+      }
+    }, 650);
+  }, {passive:true});
+  document.addEventListener('pointerdown', restoreCursor, {passive:true});
+  document.documentElement.addEventListener('pointerleave', () => {
+    inside = false;
+    restoreCursor();
+  }, {passive:true});
+  window.addEventListener('blur', () => {
+    inside = false;
+    restoreCursor();
+  });
+  window.addEventListener('scroll', restoreCursor, {passive:true});
+  document.addEventListener('keydown', restoreCursor);
+  document.addEventListener('visibilitychange', restoreCursor);
+  finePointer.addEventListener('change', restoreCursor);
+})();
