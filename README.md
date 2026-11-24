@@ -47,7 +47,7 @@ behaviour in text inputs, video players and the image viewer after changing
 navigation or selectors. Update the CSS/JavaScript query versions in
 `tools/build.py` when changing cached assets, then rebuild.
 
-The resting mouse pointer is drawn by `docs/site.js` and styled in
+The custom mouse pointer is drawn by `docs/site.js` and styled in
 `docs/styles.css`. The icon is `docs/assets/cursor-skull.svg`.
 
 After the final public URL is known, run:

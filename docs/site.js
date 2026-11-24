@@ -138,72 +138,62 @@
   dialog.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'&&active>0){event.preventDefault();show(active-1);}if(event.key==='ArrowRight'&&active<images.length-1){event.preventDefault();show(active+1);}});
 })();
 
-// Draw the resting pointer in the page so it also works in embedded browsers.
+// Draw the mouse pointer in the page so it also works in embedded browsers.
 (() => {
   'use strict';
   const script = document.currentScript;
   if (!script?.src) return;
 
-  const idleClass = 'idle-skull-cursor';
-  const controls = 'button, input, textarea, select, label, summary, '
-    + '[role="button"], [role="link"], [role="slider"], [contenteditable], '
-    + 'nav, dialog, video, audio, iframe';
+  const page = document.documentElement;
+  const viewer = document.querySelector('dialog');
   const skull = document.createElement('img');
   skull.className = 'skull-pointer';
   skull.alt = '';
   skull.setAttribute('aria-hidden', 'true');
+  skull.draggable = false;
   skull.hidden = true;
   skull.src = new URL('assets/cursor-skull.svg', script.src).href;
   document.body.append(skull);
 
-  let timer;
   let pointer;
-
-  function restoreCursor() {
-    clearTimeout(timer);
-    skull.hidden = true;
-    document.body.classList.remove(idleClass);
-  }
-
-  function eligible(element) {
-    if (!element || element.closest(controls)) return false;
-    const link = element.closest('a[href]');
-    return !link || link.matches('.cover-image, .archive-work > a, .publication-image');
-  }
-
-  function scheduleCursor() {
-    restoreCursor();
-    if (!pointer || pointer.buttons) return;
-    timer = setTimeout(() => {
-      if (!skull.naturalWidth || document.visibilityState !== 'visible'
-        || document.querySelector('dialog[open]')
-        || !eligible(document.elementFromPoint(pointer.x, pointer.y))) return;
-      skull.style.left = `${pointer.x}px`;
-      skull.style.top = `${pointer.y}px`;
-      skull.hidden = false;
-      document.body.classList.add(idleClass);
-    }, 240);
-  }
-
-  function trackPointer(event) {
-    pointer = event.pointerType === 'mouse' ? {x: event.clientX, y: event.clientY, buttons: event.buttons} : undefined;
-    scheduleCursor();
-  }
 
   function clearPointer() {
     pointer = undefined;
-    restoreCursor();
+    skull.hidden = true;
+    page.classList.remove('has-skull-pointer');
   }
 
-  for (const type of ['pointerover', 'pointermove', 'pointerdown', 'pointerup']) {
+  function drawPointer() {
+    if (!pointer || !skull.naturalWidth) return;
+    const layer = viewer?.open ? viewer : document.body;
+    if (skull.parentElement !== layer) layer.append(skull);
+    skull.style.transform = `translate3d(${pointer.x}px, ${pointer.y}px, 0) translate(-50%, -50%)`;
+    if (skull.hidden) {
+      skull.hidden = false;
+      page.classList.add('has-skull-pointer');
+    }
+  }
+
+  function trackPointer(event) {
+    if (event.pointerType !== 'mouse') return;
+    const {clientX: x, clientY: y} = event;
+    if (x < 0 || y < 0 || x >= innerWidth || y >= innerHeight) {
+      clearPointer();
+      return;
+    }
+    pointer = {x, y};
+    drawPointer();
+  }
+
+  for (const type of ['pointerover', 'pointermove']) {
     document.addEventListener(type, trackPointer, {passive:true});
   }
-  document.documentElement.addEventListener('pointerleave', clearPointer, {passive:true});
-  document.addEventListener('pointercancel', clearPointer, {passive:true});
-  window.addEventListener('blur', clearPointer);
-  window.addEventListener('scroll', scheduleCursor, {passive:true});
-  window.addEventListener('resize', scheduleCursor);
-  skull.addEventListener('load', scheduleCursor);
-  document.addEventListener('keydown', restoreCursor);
-  document.addEventListener('visibilitychange', restoreCursor);
+  page.addEventListener('pointerleave', event => {
+    if (event.pointerType === 'mouse') clearPointer();
+  }, {passive:true});
+  skull.addEventListener('load', drawPointer);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) clearPointer();
+  });
+  if (viewer) new MutationObserver(drawPointer).observe(viewer, {attributeFilter:['open']});
 })();

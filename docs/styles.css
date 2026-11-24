@@ -332,8 +332,11 @@ h1,h2,h3,p,button,input{font-weight:400}
  .artist-portrait{width:186px}
 }
 
-body.idle-skull-cursor,body.idle-skull-cursor :hover{cursor:none!important}
+@media (any-pointer:fine) {
+ :root,:root *{cursor:url("assets/cursor-skull.svg") 16 16,auto!important}
+}
+:root.has-skull-pointer,:root.has-skull-pointer *{cursor:none!important}
 .skull-pointer{
- position:fixed;z-index:1000;width:32px;height:32px;
- transform:translate(-50%,-50%);pointer-events:none;
+ position:fixed;top:0;left:0;z-index:1000;width:32px;height:32px;
+ pointer-events:none;user-select:none;
 }
