@@ -1,0 +1,1691 @@
+{
+  "artist": "Zhou Jun",
+  "studio": "zjhahalife studio",
+  "instagram": "https://www.instagram.com/zjhahalife/",
+  "bio": "Born 2004 in Haiyan County, Jiaxing, Zhejiang, China. Currently living and working between Hangzhou, China and Providence, RI, USA. Rhode Island School of Design.",
+  "statement": "My practice centers on painting and sculpture, with video and performance functioning as secondary pathways that extend the same visual and conceptual logic. Through shifting forms, found materials, and subtle spatial decisions, I explore how perception, memory, and the body negotiate their place within changing environments.",
+  "works": [
+    {
+      "id": "P01",
+      "title": "Nuclear Conference",
+      "year": "2026",
+      "medium": "Acrylic on canvas",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p01-01-display.svg",
+          "thumbnail": "assets/p01-01-display.svg",
+          "width": 1134,
+          "height": 1500,
+          "original_src": "assets/p01-01.webp",
+          "original_width": 1280,
+          "original_height": 1707,
+          "blank_margin_bounds": [
+            74,
+            103,
+            1208,
+            1603
+          ]
+        }
+      ],
+      "url": "works/p01.html"
+    },
+    {
+      "id": "P02",
+      "title": "Comfort ZONe",
+      "year": "2026",
+      "medium": "Acrylic on canvas",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p02-01.webp",
+          "thumbnail": "assets/p02-01-small.webp",
+          "width": 1136,
+          "height": 1136,
+          "source_width": 1136,
+          "source_height": 1136
+        }
+      ],
+      "url": "works/p02.html"
+    },
+    {
+      "id": "P03",
+      "title": "HOrroor Nevel Website",
+      "year": "2026",
+      "medium": "Acrylic on canvas",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p03-01.webp",
+          "thumbnail": "assets/p03-01-small.webp",
+          "width": 960,
+          "height": 960,
+          "source_width": 960,
+          "source_height": 960
+        }
+      ],
+      "url": "works/p03.html"
+    },
+    {
+      "id": "P04",
+      "title": "Sleep chamber",
+      "year": "2026",
+      "medium": "Acrylic on canvas",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p04-01.webp",
+          "thumbnail": "assets/p04-01-small.webp",
+          "width": 1116,
+          "height": 1116,
+          "source_width": 1116,
+          "source_height": 1116
+        }
+      ],
+      "url": "works/p04.html"
+    },
+    {
+      "id": "P05",
+      "title": "Kinder",
+      "year": "2026",
+      "medium": "Acrylic on canvas",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p05-01.webp",
+          "thumbnail": "assets/p05-01-small.webp",
+          "width": 928,
+          "height": 1237,
+          "source_width": 928,
+          "source_height": 1237
+        }
+      ],
+      "url": "works/p05.html"
+    },
+    {
+      "id": "P06",
+      "title": "Little Viiice club",
+      "year": "2026",
+      "medium": "Acrylic on canvas",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p06-01.webp",
+          "thumbnail": "assets/p06-01-small.webp",
+          "width": 792,
+          "height": 792,
+          "source_width": 792,
+          "source_height": 792
+        }
+      ],
+      "url": "works/p06.html"
+    },
+    {
+      "id": "P07",
+      "title": "GUMMY CANdy CIGarette club",
+      "year": "2026",
+      "medium": "Acrylic on canvas",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p07-01.webp",
+          "thumbnail": "assets/p07-01-small.webp",
+          "width": 892,
+          "height": 1190,
+          "source_width": 892,
+          "source_height": 1190
+        }
+      ],
+      "url": "works/p07.html"
+    },
+    {
+      "id": "P08",
+      "title": "Untitled",
+      "year": "2024",
+      "medium": "Acrylic on plank",
+      "size": "20 × 23 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p08-01.webp",
+          "thumbnail": "assets/p08-01-small.webp",
+          "width": 1800,
+          "height": 1800,
+          "source_width": 3233,
+          "source_height": 3233
+        }
+      ],
+      "url": "works/p08.html"
+    },
+    {
+      "id": "P09",
+      "title": "Transcription equipment of grocery stores 2.0",
+      "year": "2025",
+      "medium": "Acrylic on plank",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p09-01.webp",
+          "thumbnail": "assets/p09-01-small.webp",
+          "width": 674,
+          "height": 892,
+          "source_width": 674,
+          "source_height": 892
+        }
+      ],
+      "url": "works/p09.html"
+    },
+    {
+      "id": "P10",
+      "title": "Transcription equipment of grocery stores 1.0",
+      "year": "2025",
+      "medium": "Acrylic on plank",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p10-01.webp",
+          "thumbnail": "assets/p10-01-small.webp",
+          "width": 509,
+          "height": 509,
+          "source_width": 509,
+          "source_height": 509
+        }
+      ],
+      "url": "works/p10.html"
+    },
+    {
+      "id": "P11",
+      "title": "Diper",
+      "year": "2025",
+      "medium": "Acrylic on plank",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p11-01.webp",
+          "thumbnail": "assets/p11-01-small.webp",
+          "width": 660,
+          "height": 499,
+          "source_width": 660,
+          "source_height": 499
+        }
+      ],
+      "url": "works/p11.html"
+    },
+    {
+      "id": "P12",
+      "title": "Trader Joe's strawberry jam",
+      "year": "2025",
+      "medium": "Acrylic on plank",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p12-01.webp",
+          "thumbnail": "assets/p12-01-small.webp",
+          "width": 394,
+          "height": 526,
+          "source_width": 394,
+          "source_height": 526
+        }
+      ],
+      "url": "works/p12.html"
+    },
+    {
+      "id": "P13",
+      "title": "The tragedy caused by broccoli",
+      "year": "2025",
+      "medium": "Acrylic on plank",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p13-01.webp",
+          "thumbnail": "assets/p13-01-small.webp",
+          "width": 770,
+          "height": 770,
+          "source_width": 770,
+          "source_height": 770
+        }
+      ],
+      "url": "works/p13.html"
+    },
+    {
+      "id": "P14",
+      "title": "Biker MICE",
+      "year": "2025",
+      "medium": "Acrylic on plank",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p14-01.webp",
+          "thumbnail": "assets/p14-01-small.webp",
+          "width": 673,
+          "height": 846,
+          "source_width": 673,
+          "source_height": 846
+        }
+      ],
+      "url": "works/p14.html"
+    },
+    {
+      "id": "P15",
+      "title": "Dogs & the Special Task Force",
+      "year": "2025",
+      "medium": "Acrylic on plank",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p15-01.webp",
+          "thumbnail": "assets/p15-01-small.webp",
+          "width": 478,
+          "height": 606,
+          "source_width": 478,
+          "source_height": 606
+        }
+      ],
+      "url": "works/p15.html"
+    },
+    {
+      "id": "P16",
+      "title": "Desert boxing",
+      "year": "2024",
+      "medium": "Acrylic on plank",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p16-01.webp",
+          "thumbnail": "assets/p16-01-small.webp",
+          "width": 644,
+          "height": 514,
+          "source_width": 644,
+          "source_height": 514
+        }
+      ],
+      "url": "works/p16.html"
+    },
+    {
+      "id": "P17",
+      "title": "Desert 1&2",
+      "year": "2024",
+      "medium": "Acrylic on plank",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p17-01.webp",
+          "thumbnail": "assets/p17-01-small.webp",
+          "width": 1800,
+          "height": 1709,
+          "source_width": 3393,
+          "source_height": 3221
+        },
+        {
+          "src": "assets/p17-02.webp",
+          "thumbnail": "assets/p17-02-small.webp",
+          "width": 1494,
+          "height": 1800,
+          "source_width": 2987,
+          "source_height": 3600
+        }
+      ],
+      "url": "works/p17.html"
+    },
+    {
+      "id": "P18",
+      "title": "TDC",
+      "year": "2025",
+      "medium": "Acrylic on plank",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p18-01.webp",
+          "thumbnail": "assets/p18-01-small.webp",
+          "width": 841,
+          "height": 665,
+          "source_width": 841,
+          "source_height": 665
+        }
+      ],
+      "url": "works/p18.html"
+    },
+    {
+      "id": "P19",
+      "title": "Milk Box",
+      "year": "2025",
+      "medium": "Acrylic on plank",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p19-01.webp",
+          "thumbnail": "assets/p19-01-small.webp",
+          "width": 1350,
+          "height": 1800,
+          "source_width": 2700,
+          "source_height": 3600
+        }
+      ],
+      "url": "works/p19.html"
+    },
+    {
+      "id": "P20",
+      "title": "Toilet bowl",
+      "year": "2024",
+      "medium": "Acrylic on plank",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p20-01.webp",
+          "thumbnail": "assets/p20-01-small.webp",
+          "width": 649,
+          "height": 522,
+          "source_width": 649,
+          "source_height": 522
+        }
+      ],
+      "url": "works/p20.html"
+    },
+    {
+      "id": "P21",
+      "title": "Circus troupe",
+      "year": "2024",
+      "medium": "Acrylic on plank",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p21-01.webp",
+          "thumbnail": "assets/p21-01-small.webp",
+          "width": 1478,
+          "height": 1800,
+          "source_width": 2956,
+          "source_height": 3600
+        }
+      ],
+      "url": "works/p21.html"
+    },
+    {
+      "id": "P22",
+      "title": "Black Cloud",
+      "year": "2025",
+      "medium": "Acrylic on plank",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p22-01.webp",
+          "thumbnail": "assets/p22-01-small.webp",
+          "width": 687,
+          "height": 687,
+          "source_width": 687,
+          "source_height": 687
+        }
+      ],
+      "url": "works/p22.html"
+    },
+    {
+      "id": "P23",
+      "title": "Archway",
+      "year": "2024",
+      "medium": "Acrylic on plank",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p23-01.webp",
+          "thumbnail": "assets/p23-01-small.webp",
+          "width": 593,
+          "height": 481,
+          "source_width": 593,
+          "source_height": 481
+        }
+      ],
+      "url": "works/p23.html"
+    },
+    {
+      "id": "P24",
+      "title": "Beyond Home 1",
+      "year": "2024",
+      "medium": "Acrylic on plank",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p24-01.webp",
+          "thumbnail": "assets/p24-01-small.webp",
+          "width": 1350,
+          "height": 1800,
+          "source_width": 2700,
+          "source_height": 3600
+        }
+      ],
+      "url": "works/p24.html"
+    },
+    {
+      "id": "P25",
+      "title": "Beyond Home 2",
+      "year": "2024",
+      "medium": "Acrylic on plank",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p25-01.webp",
+          "thumbnail": "assets/p25-01-small.webp",
+          "width": 1800,
+          "height": 1800,
+          "source_width": 3600,
+          "source_height": 3600
+        }
+      ],
+      "url": "works/p25.html"
+    },
+    {
+      "id": "P26",
+      "title": "A New Fur Coat?",
+      "year": "2024",
+      "medium": "Acrylic on plank",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p26-01.webp",
+          "thumbnail": "assets/p26-01-small.webp",
+          "width": 1800,
+          "height": 1800,
+          "source_width": 3600,
+          "source_height": 3600
+        }
+      ],
+      "url": "works/p26.html"
+    },
+    {
+      "id": "P27",
+      "title": "Tiger Bai’en",
+      "year": "2024",
+      "medium": "Acrylic on plank",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p27-01.webp",
+          "thumbnail": "assets/p27-01-small.webp",
+          "width": 1800,
+          "height": 1800,
+          "source_width": 3600,
+          "source_height": 3600
+        }
+      ],
+      "url": "works/p27.html"
+    },
+    {
+      "id": "P28",
+      "title": "Three cats throw stars",
+      "year": "2024",
+      "medium": "Acrylic on plank",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p28-01.webp",
+          "thumbnail": "assets/p28-01-small.webp",
+          "width": 565,
+          "height": 762,
+          "source_width": 565,
+          "source_height": 762
+        }
+      ],
+      "url": "works/p28.html"
+    },
+    {
+      "id": "P29",
+      "title": "American plush toys",
+      "year": "2024",
+      "medium": "Acrylic on plank",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p29-01.webp",
+          "thumbnail": "assets/p29-01-small.webp",
+          "width": 1800,
+          "height": 1800,
+          "source_width": 3600,
+          "source_height": 3600
+        }
+      ],
+      "url": "works/p29.html"
+    },
+    {
+      "id": "P30",
+      "title": "Tropical",
+      "year": "2023",
+      "medium": "Acrylic on canvas",
+      "size": "80 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p30-01.webp",
+          "thumbnail": "assets/p30-01-small.webp",
+          "width": 1800,
+          "height": 1723,
+          "source_width": 3600,
+          "source_height": 3446
+        }
+      ],
+      "url": "works/p30.html"
+    },
+    {
+      "id": "P31",
+      "title": "EGG Circulate",
+      "year": "2023",
+      "medium": "Acrylic on canvas",
+      "size": "120 × 80",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p31-01.webp",
+          "thumbnail": "assets/p31-01-small.webp",
+          "width": 1800,
+          "height": 1800,
+          "source_width": 3600,
+          "source_height": 3600
+        }
+      ],
+      "url": "works/p31.html"
+    },
+    {
+      "id": "P32",
+      "title": "We will meet in the bathroom",
+      "year": "2023",
+      "medium": "Acrylic on canvas",
+      "size": "80 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p32-01.webp",
+          "thumbnail": "assets/p32-01-small.webp",
+          "width": 1800,
+          "height": 1800,
+          "source_width": 3600,
+          "source_height": 3600
+        }
+      ],
+      "url": "works/p32.html"
+    },
+    {
+      "id": "P33",
+      "title": "Coconut",
+      "year": "2023",
+      "medium": "Acrylic on canvas",
+      "size": "60 × 60 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p33-01.webp",
+          "thumbnail": "assets/p33-01-small.webp",
+          "width": 452,
+          "height": 473,
+          "source_width": 452,
+          "source_height": 473
+        }
+      ],
+      "url": "works/p33.html"
+    },
+    {
+      "id": "P34",
+      "title": "Stock Line",
+      "year": "2023",
+      "medium": "Acrylic on canvas",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p34-01.webp",
+          "thumbnail": "assets/p34-01-small.webp",
+          "width": 664,
+          "height": 883,
+          "source_width": 664,
+          "source_height": 883
+        }
+      ],
+      "url": "works/p34.html"
+    },
+    {
+      "id": "I01",
+      "title": "Ambiguous Cartography",
+      "year": "2026",
+      "medium": "Plaster (cast, carved, and reshaped form), 3D scanning and digital modeling, AI-based image synthesis, hybrid cartographic compositions, inkjet prints, metal needle, bodily interaction (finger)",
+      "size": "",
+      "categories": [
+        "installation"
+      ],
+      "web_images": [
+        {
+          "src": "assets/i01-01.webp",
+          "thumbnail": "assets/i01-01-small.webp",
+          "width": 1536,
+          "height": 1024,
+          "source_width": 1536,
+          "source_height": 1024
+        },
+        {
+          "src": "assets/i01-02.webp",
+          "thumbnail": "assets/i01-02-small.webp",
+          "width": 1800,
+          "height": 1800,
+          "source_width": 3600,
+          "source_height": 3600
+        },
+        {
+          "src": "assets/i01-03.webp",
+          "thumbnail": "assets/i01-03-small.webp",
+          "width": 1800,
+          "height": 1800,
+          "source_width": 3600,
+          "source_height": 3600
+        }
+      ],
+      "url": "works/i01.html",
+      "description_paragraphs": [
+        "Totem → Memory → Map → Question",
+        "I began this work from an uncertainty around the idea of a “spiritual totem,” not as a fixed cultural symbol, but as something unstable and constantly shifting between different environments.",
+        "This uncertainty comes from my own experience of moving between cultures, where a sense of belonging is never fully stable or singular.",
+        "In my earlier work Timber Warfront, I used a map-like wooden structure combined with toy soldiers to construct a space of conflict.",
+        "In that piece, the map was not a neutral representation, but a field where different cultural understandings collide, like stones striking each other in the mind.",
+        "This work established my interest in using maps not to describe space, but to expose tension between experiences.",
+        "This project was influenced by Jorge Luis Borges and his short text On Exactitude in Science.",
+        "In the story, a map becomes so accurate that it matches the empire exactly, and therefore loses its function.",
+        "Following this idea, I chose to move in the opposite direction: instead of increasing accuracy, I intentionally produce ambiguity.",
+        "Material Process: Plaster Transformation",
+        "The work begins with a buffalo as a totemic form, which I sculpt using plaster.",
+        "During the making process, I gradually remove its figurative clarity, allowing the form to shift toward something closer to a map-like structure.",
+        "Plaster here functions as a transitional material, carrying both physical presence and abstract transformation."
+      ],
+      "description": "Totem → Memory → Map → Question\n\nI began this work from an uncertainty around the idea of a “spiritual totem,” not as a fixed cultural symbol, but as something unstable and constantly shifting between different environments.\n\nThis uncertainty comes from my own experience of moving between cultures, where a sense of belonging is never fully stable or singular.\n\nIn my earlier work Timber Warfront, I used a map-like wooden structure combined with toy soldiers to construct a space of conflict.\n\nIn that piece, the map was not a neutral representation, but a field where different cultural understandings collide, like stones striking each other in the mind.\n\nThis work established my interest in using maps not to describe space, but to expose tension between experiences.\n\nThis project was influenced by Jorge Luis Borges and his short text On Exactitude in Science.\n\nIn the story, a map becomes so accurate that it matches the empire exactly, and therefore loses its function.\n\nFollowing this idea, I chose to move in the opposite direction: instead of increasing accuracy, I intentionally produce ambiguity.\n\nMaterial Process: Plaster Transformation\n\nThe work begins with a buffalo as a totemic form, which I sculpt using plaster.\n\nDuring the making process, I gradually remove its figurative clarity, allowing the form to shift toward something closer to a map-like structure.\n\nPlaster here functions as a transitional material, carrying both physical presence and abstract transformation.",
+      "description_headings": [
+        0,
+        9
+      ]
+    },
+    {
+      "id": "I02",
+      "title": "Ring-shaped and knotted foods",
+      "year": "2025",
+      "medium": "Bread, vacuum sealing apparatus, plastic bags, single-channel video, 30 fps, 480p",
+      "size": "",
+      "categories": [
+        "installation",
+        "video"
+      ],
+      "web_images": [
+        {
+          "src": "assets/i02-01.webp",
+          "thumbnail": "assets/i02-01-small.webp",
+          "width": 904,
+          "height": 603,
+          "source_width": 904,
+          "source_height": 603
+        },
+        {
+          "src": "assets/i02-02.webp",
+          "thumbnail": "assets/i02-02-small.webp",
+          "width": 851,
+          "height": 851,
+          "source_width": 851,
+          "source_height": 851
+        }
+      ],
+      "url": "works/i02.html",
+      "description_paragraphs": [
+        "Ring-shaped and knotted foods appear across diverse culinary traditions and cultural contexts. From bagels and pretzels to braided pastries, these self-enclosing forms recur across geographical and historical boundaries. As a visual structure, the loop suggests continuity, connection, and repetition while resisting a clearly defined beginning or end. In this sense, the work resonates with Gilles Deleuze’s notion of becoming, in which meaning emerges not from fixed identities but through ongoing processes of transformation.",
+        "The project takes two ring-shaped foods as its material and subjects them to a sequence of actions: chewing, regurgitation, reshaping, and reheating. Through these interventions, the foods are displaced from their original cultural and commercial functions and enter an ambiguous state. They oscillate between food and waste, consumption and production, bodily residue and sculptural object.",
+        "One section of the work is titled Universal Alchemy. Here, the microwave functions not merely as a kitchen appliance but as a quotidian technological apparatus. Within the routines of student life, the microwave and electric kettle often operate as universal tools capable of transforming nearly any substance into an edible form. Their role recalls Michel de Certeau’s observations on everyday practices, through which ordinary users continually reinterpret and repurpose existing systems.",
+        "By bringing together bodily digestion, technological mediation, and material reconfiguration, the work examines transformation as an ongoing condition rather than a discrete event. Food becomes more than an object of consumption; it acts as a medium through which relationships among the body, technology, and cultural memory are negotiated. The circular form remains central throughout—a recurring motif that points toward cycles of ingestion, alteration, expulsion, and renewal, through which matter is continuously assigned new meanings."
+      ],
+      "description": "Ring-shaped and knotted foods appear across diverse culinary traditions and cultural contexts. From bagels and pretzels to braided pastries, these self-enclosing forms recur across geographical and historical boundaries. As a visual structure, the loop suggests continuity, connection, and repetition while resisting a clearly defined beginning or end. In this sense, the work resonates with Gilles Deleuze’s notion of becoming, in which meaning emerges not from fixed identities but through ongoing processes of transformation.\n\nThe project takes two ring-shaped foods as its material and subjects them to a sequence of actions: chewing, regurgitation, reshaping, and reheating. Through these interventions, the foods are displaced from their original cultural and commercial functions and enter an ambiguous state. They oscillate between food and waste, consumption and production, bodily residue and sculptural object.\n\nOne section of the work is titled Universal Alchemy. Here, the microwave functions not merely as a kitchen appliance but as a quotidian technological apparatus. Within the routines of student life, the microwave and electric kettle often operate as universal tools capable of transforming nearly any substance into an edible form. Their role recalls Michel de Certeau’s observations on everyday practices, through which ordinary users continually reinterpret and repurpose existing systems.\n\nBy bringing together bodily digestion, technological mediation, and material reconfiguration, the work examines transformation as an ongoing condition rather than a discrete event. Food becomes more than an object of consumption; it acts as a medium through which relationships among the body, technology, and cultural memory are negotiated. The circular form remains central throughout—a recurring motif that points toward cycles of ingestion, alteration, expulsion, and renewal, through which matter is continuously assigned new meanings.",
+      "video": {
+        "src": "assets/video/i02.mp4",
+        "type": "video/mp4",
+        "duration_seconds": 770.276,
+        "duration_label": "12 min 50 sec",
+        "width": 854,
+        "height": 480,
+        "has_audio": true,
+        "label": "Complete video"
+      },
+      "video_duration": "12 min 50 sec"
+    },
+    {
+      "id": "I03",
+      "title": "Indeterminate Gait",
+      "year": "2025",
+      "medium": "Welded metal, brass duck-head handle (found object), coat hook, fabric work coat, clay, plastic craft gems, spray paint",
+      "size": "Irregular dimensions",
+      "categories": [
+        "installation"
+      ],
+      "web_images": [
+        {
+          "src": "assets/i03-01.webp",
+          "thumbnail": "assets/i03-01-small.webp",
+          "width": 793,
+          "height": 1800,
+          "source_width": 1280,
+          "source_height": 2906
+        },
+        {
+          "src": "assets/i03-02.webp",
+          "thumbnail": "assets/i03-02-small.webp",
+          "width": 550,
+          "height": 550,
+          "source_width": 550,
+          "source_height": 550
+        },
+        {
+          "src": "assets/i03-03.webp",
+          "thumbnail": "assets/i03-03-small.webp",
+          "width": 560,
+          "height": 383,
+          "source_width": 560,
+          "source_height": 383
+        }
+      ],
+      "url": "works/i03.html",
+      "description_paragraphs": [
+        "This work started with a brass duck head taken from an old cane. Its original function and its sense of etiquette were still present, but fragile. I wanted to give it a new body that no longer followed the logic of a single species or a single purpose.",
+        "The leg is welded from metal and merges a human foot structure with the form of a bird’s talon. It stays somewhere between anatomy and fabrication, like a limb that has passed through different owners or different biological rules.",
+        "The pink clay growths and the small plastic gems refer to two opposite impulses—childhood ornament and pathological swelling. They sit together without resolving the tension.",
+        "I added a hook behind the handle so it can hold my coat or work jacket. When clothing hangs from it, the object feels partly functional again, but in a way that doesn’t fully return to its past identity. It becomes something that stands there for me—half companion, half tool.",
+        "The work is less about creating a hybrid creature and more about loosening the categories that decide what a body or an object should be. It tries to keep the moment when an identity is still shifting, when posture has not yet settled into a final form."
+      ],
+      "description": "This work started with a brass duck head taken from an old cane. Its original function and its sense of etiquette were still present, but fragile. I wanted to give it a new body that no longer followed the logic of a single species or a single purpose.\n\nThe leg is welded from metal and merges a human foot structure with the form of a bird’s talon. It stays somewhere between anatomy and fabrication, like a limb that has passed through different owners or different biological rules.\n\nThe pink clay growths and the small plastic gems refer to two opposite impulses—childhood ornament and pathological swelling. They sit together without resolving the tension.\n\nI added a hook behind the handle so it can hold my coat or work jacket. When clothing hangs from it, the object feels partly functional again, but in a way that doesn’t fully return to its past identity. It becomes something that stands there for me—half companion, half tool.\n\nThe work is less about creating a hybrid creature and more about loosening the categories that decide what a body or an object should be. It tries to keep the moment when an identity is still shifting, when posture has not yet settled into a final form."
+    },
+    {
+      "id": "I04",
+      "title": "Timber Warfront",
+      "year": "2025",
+      "medium": "Bandsaw-cut wood, hand-carved wooden stakes, plastic toy soldiers (found objects), printed paper, 502 instant glue, wood glue",
+      "size": "Irregular dimensions",
+      "categories": [
+        "installation"
+      ],
+      "web_images": [
+        {
+          "src": "assets/i04-01.webp",
+          "thumbnail": "assets/i04-01-small.webp",
+          "width": 1329,
+          "height": 1322,
+          "source_width": 1329,
+          "source_height": 1322
+        },
+        {
+          "src": "assets/i04-02.webp",
+          "thumbnail": "assets/i04-02-small.webp",
+          "width": 516,
+          "height": 387,
+          "source_width": 516,
+          "source_height": 387
+        }
+      ],
+      "url": "works/i04.html",
+      "description_paragraphs": [
+        "The work constructs a small-scale territorial model that examines how mobility is shaped, confined, and imagined across multiple geographies. Using bandsaw-cut wood panels layered into a hybrid map, the piece compresses two spatial systems—one associated with where I come from, and one tied to where I currently live. Their boundaries are not meant to fuse seamlessly; instead, they form an unstable surface where territorial logics collide and reconfigure.",
+        "Hand-carved wooden stakes, printed paper, nails, and plastic toy figures—objects typically used to mark occupation, strategy, or play—are placed across this landscape. Their fixed positions point to the friction between the freedom of movement we assume and the infrastructural, political, and administrative constraints that continually organize that movement. The toy soldiers in particular operate as small indexes of how occupation becomes aestheticized, gamified, or naturalized within everyday cultural materials.",
+        "Rather than staging a literal conflict, the work considers how contemporary mobility often takes on the structure of a managed crossing: regulated, conditional, and uneven. It treats the landscape not as a battlefield but as a diagram of negotiated passages—points where borders, permissions, and trajectories must be repeatedly re-established.",
+        "This inquiry extends beyond personal geography. It gestures toward broader discussions on land governance, systems of planetary circulation, and the ways in which certain bodies are enabled to move while others remain structurally peripheral. These concerns intersect with Indigenous conceptions of land as relation rather than possession, emphasizing spatial continuity and responsibility rather than extraction or control. In that sense, the work approaches territory less as a fixed shape than as an ongoing set of relations, continually redrawn through movement, restriction, and imagined access.",
+        "As the project continues to develop, it will expand into a larger system-based investigation that connects individual mobility to wider spatial infrastructures. Future iterations will examine how circulation operates across scales—from the intimate routes of daily life to continental corridors, atmospheric systems, and geopolitical arrangements. This expansion will not overwrite the current form but situates it as one component within a broader framework that studies how territories emerge, shift, and negotiate meaning through movement."
+      ],
+      "description": "The work constructs a small-scale territorial model that examines how mobility is shaped, confined, and imagined across multiple geographies. Using bandsaw-cut wood panels layered into a hybrid map, the piece compresses two spatial systems—one associated with where I come from, and one tied to where I currently live. Their boundaries are not meant to fuse seamlessly; instead, they form an unstable surface where territorial logics collide and reconfigure.\n\nHand-carved wooden stakes, printed paper, nails, and plastic toy figures—objects typically used to mark occupation, strategy, or play—are placed across this landscape. Their fixed positions point to the friction between the freedom of movement we assume and the infrastructural, political, and administrative constraints that continually organize that movement. The toy soldiers in particular operate as small indexes of how occupation becomes aestheticized, gamified, or naturalized within everyday cultural materials.\n\nRather than staging a literal conflict, the work considers how contemporary mobility often takes on the structure of a managed crossing: regulated, conditional, and uneven. It treats the landscape not as a battlefield but as a diagram of negotiated passages—points where borders, permissions, and trajectories must be repeatedly re-established.\n\nThis inquiry extends beyond personal geography. It gestures toward broader discussions on land governance, systems of planetary circulation, and the ways in which certain bodies are enabled to move while others remain structurally peripheral. These concerns intersect with Indigenous conceptions of land as relation rather than possession, emphasizing spatial continuity and responsibility rather than extraction or control. In that sense, the work approaches territory less as a fixed shape than as an ongoing set of relations, continually redrawn through movement, restriction, and imagined access.\n\nAs the project continues to develop, it will expand into a larger system-based investigation that connects individual mobility to wider spatial infrastructures. Future iterations will examine how circulation operates across scales—from the intimate routes of daily life to continental corridors, atmospheric systems, and geopolitical arrangements. This expansion will not overwrite the current form but situates it as one component within a broader framework that studies how territories emerge, shift, and negotiate meaning through movement."
+    },
+    {
+      "id": "I05",
+      "title": "Post-Human Infrastructures: The Energetic Potential of Pulmonary Luminescence",
+      "year": "2025",
+      "medium": "Installation Sound Work",
+      "size": "",
+      "categories": [
+        "installation",
+        "video"
+      ],
+      "web_images": [
+        {
+          "src": "assets/i05-01.webp",
+          "thumbnail": "assets/i05-01-small.webp",
+          "width": 801,
+          "height": 459,
+          "source_width": 801,
+          "source_height": 459
+        }
+      ],
+      "url": "works/i05.html",
+      "description_paragraphs": [
+        "This study assumes that \"the body can be recoded as an energy unit in the consumer capitalism system\", Unfold the fictional deducing of the post-human infrastructure.",
+        "Post-Human Infrastructure: A Study on the Energy Potential of Luminous Lungs originated from a critical reflection on the pseudo-medical narrative in American cigarette advertisements in the 20th century.",
+        "In those historical cases, smoking has been shaped as a positive behavior to promote health, promote socialization and even improve productivity.",
+        "This work extends this absurd logic and envisions a future landscape that integrates the luminescence of the diseased lung into the urban energy network."
+      ],
+      "description": "This study assumes that \"the body can be recoded as an energy unit in the consumer capitalism system\", Unfold the fictional deducing of the post-human infrastructure.\n\nPost-Human Infrastructure: A Study on the Energy Potential of Luminous Lungs originated from a critical reflection on the pseudo-medical narrative in American cigarette advertisements in the 20th century.\n\nIn those historical cases, smoking has been shaped as a positive behavior to promote health, promote socialization and even improve productivity.\n\nThis work extends this absurd logic and envisions a future landscape that integrates the luminescence of the diseased lung into the urban energy network.",
+      "video": {
+        "src": "assets/video/i05.mp4",
+        "type": "video/mp4",
+        "duration_seconds": 83.035,
+        "duration_label": "1 min 23 sec",
+        "width": 960,
+        "height": 540,
+        "has_audio": true,
+        "label": "Complete video"
+      },
+      "video_duration": "1 min 23 sec",
+      "credits": {
+        "Filming and editing": "Zhou Jun",
+        "Sound": "Adam Damiano"
+      }
+    },
+    {
+      "id": "I06",
+      "title": "monkey typewriter",
+      "year": "2024—2025",
+      "medium": "Wooden boards, wooden columns, aluminum mechanical structure, silicone rubber",
+      "size": "",
+      "categories": [
+        "installation"
+      ],
+      "web_images": [
+        {
+          "src": "assets/i06-01.webp",
+          "thumbnail": "assets/i06-01-small.webp",
+          "width": 768,
+          "height": 507,
+          "source_width": 768,
+          "source_height": 507
+        },
+        {
+          "src": "assets/i06-02.webp",
+          "thumbnail": "assets/i06-02-small.webp",
+          "width": 554,
+          "height": 386,
+          "source_width": 554,
+          "source_height": 386
+        }
+      ],
+      "url": "works/i06.html",
+      "description_paragraphs": [
+        "The “monkey typewriter” (or infinite monkey theorem) originates from a mathematical thought experiment. It proposes that if a monkey were to randomly strike keys on a typewriter for an infinite amount of time, it would eventually produce the complete works of Shakespeare—or any book, any piece of text.",
+        "In this project, the finger moves at a constant rhythm, yet even given infinite time, no definitive result can be glimpsed. Scratches continue to appear on the glass, but they point to no discernible meaning.",
+        "Or rather, the outcome has already been fabricated by me—the work gestures toward another possibility of the concept: actions continuously unfold, but the result has been predetermined.",
+        "Here, action is no longer a process leading toward completion, but rather a manifestation of existence itself.",
+        "If generation cannot yield miracles, time ultimately collapses into mechanical repetition.",
+        "The scratches, like echoes, do not respond to a future text, but to their own endless postponement."
+      ],
+      "description": "The “monkey typewriter” (or infinite monkey theorem) originates from a mathematical thought experiment. It proposes that if a monkey were to randomly strike keys on a typewriter for an infinite amount of time, it would eventually produce the complete works of Shakespeare—or any book, any piece of text.\n\nIn this project, the finger moves at a constant rhythm, yet even given infinite time, no definitive result can be glimpsed. Scratches continue to appear on the glass, but they point to no discernible meaning.\n\nOr rather, the outcome has already been fabricated by me—the work gestures toward another possibility of the concept: actions continuously unfold, but the result has been predetermined.\n\nHere, action is no longer a process leading toward completion, but rather a manifestation of existence itself.\n\nIf generation cannot yield miracles, time ultimately collapses into mechanical repetition.\n\nThe scratches, like echoes, do not respond to a future text, but to their own endless postponement."
+    },
+    {
+      "id": "I07",
+      "title": "Dinosaur Park",
+      "year": "2024",
+      "medium": "Plastic dinosaurs, spray paint, wood boards, 3D printing materials, sound components",
+      "size": "",
+      "categories": [
+        "installation"
+      ],
+      "web_images": [
+        {
+          "src": "assets/i07-01.webp",
+          "thumbnail": "assets/i07-01-small.webp",
+          "width": 763,
+          "height": 746,
+          "source_width": 763,
+          "source_height": 746
+        }
+      ],
+      "url": "works/i07.html"
+    },
+    {
+      "id": "B01",
+      "title": "Banana Republic (from Providence to New York)",
+      "year": "2025",
+      "medium": "Photography and self-published artist book",
+      "size": "295 × 420 mm (portrait)",
+      "categories": [
+        "photography",
+        "books"
+      ],
+      "web_images": [
+        {
+          "src": "assets/b01-01.webp",
+          "thumbnail": "assets/b01-01-small.webp",
+          "width": 1243,
+          "height": 1657,
+          "source_width": 1243,
+          "source_height": 1657
+        },
+        {
+          "src": "assets/b01-02.webp",
+          "thumbnail": "assets/b01-02-small.webp",
+          "width": 1800,
+          "height": 1200,
+          "source_width": 3600,
+          "source_height": 2400
+        },
+        {
+          "src": "assets/b01-03.webp",
+          "thumbnail": "assets/b01-03-small.webp",
+          "width": 1800,
+          "height": 1200,
+          "source_width": 3600,
+          "source_height": 2400
+        },
+        {
+          "src": "assets/b01-04.webp",
+          "thumbnail": "assets/b01-04-small.webp",
+          "width": 1800,
+          "height": 1200,
+          "source_width": 3600,
+          "source_height": 2400
+        },
+        {
+          "src": "assets/b01-05.webp",
+          "thumbnail": "assets/b01-05-small.webp",
+          "width": 577,
+          "height": 795,
+          "source_width": 577,
+          "source_height": 795
+        },
+        {
+          "src": "assets/b01-06.webp",
+          "thumbnail": "assets/b01-06-small.webp",
+          "width": 616,
+          "height": 821,
+          "source_width": 616,
+          "source_height": 821
+        }
+      ],
+      "url": "works/b01.html",
+      "description_paragraphs": [
+        "In the context of a foreign land, I employ common and inexpensive fruits as protagonists—objects that transcend geographical and political boundaries yet acquire distinct symbolic meanings in different cultural contexts. Within this body of work, the banana is not merely an object of consumption but also a social, economic, and political signifier. Its production, circulation, and consumption are tied to capitalist commodity systems, global trade histories, and colonial legacies. Thus, it is not only a material entity but also a medium through which an individual’s cultural identity is redefined in the flux of geographic displacement.",
+        "In its presentation, I employ models to embody the banana as a symbol, integrating it into real-world geopolitical environments. Against various urban backdrops, the banana may appear humorous, absurd, or provoke reflections on identity. As the geographic context shifts, so too does its meaning—it can serve as a lighthearted reference to cultural consumption or subtly imply the fluidity of identity. Here, photography is not only a static visual archive but also a dynamic intervention—it captures the teleperceptive effect of the banana across different cultural landscapes, documenting how it is reinterpreted, accepted, or misread within new systems of viewing."
+      ],
+      "description": "In the context of a foreign land, I employ common and inexpensive fruits as protagonists—objects that transcend geographical and political boundaries yet acquire distinct symbolic meanings in different cultural contexts. Within this body of work, the banana is not merely an object of consumption but also a social, economic, and political signifier. Its production, circulation, and consumption are tied to capitalist commodity systems, global trade histories, and colonial legacies. Thus, it is not only a material entity but also a medium through which an individual’s cultural identity is redefined in the flux of geographic displacement.\n\nIn its presentation, I employ models to embody the banana as a symbol, integrating it into real-world geopolitical environments. Against various urban backdrops, the banana may appear humorous, absurd, or provoke reflections on identity. As the geographic context shifts, so too does its meaning—it can serve as a lighthearted reference to cultural consumption or subtly imply the fluidity of identity. Here, photography is not only a static visual archive but also a dynamic intervention—it captures the teleperceptive effect of the banana across different cultural landscapes, documenting how it is reinterpreted, accepted, or misread within new systems of viewing.",
+      "edition": {
+        "pages": 130,
+        "print_run": 300,
+        "binding": "Butterfly-bound hardcover, exposed spine, cloth wrapping",
+        "paper": "157 gsm matte art paper, duplex mounted",
+        "cover": "Lemon yellow cloth with debossed details"
+      },
+      "production_paragraphs": [
+        "This is a butterfly-bound hardcover book with exposed spine and cloth wrapping. The finished size is 295×420mm (portrait). The front and back covers use lemon yellow cloth with debossed details. The book has 130 pages, using 157 gsm matte art paper, duplex mounted, with a total print run of 300 copies."
+      ],
+      "short_title": "Banana Republic",
+      "production_date": "July 11, 2025",
+      "publishing_method": "Self-published",
+      "video": {
+        "src": "assets/video/b01.mp4",
+        "type": "video/mp4",
+        "duration_seconds": 14.002,
+        "duration_label": "14 sec",
+        "width": 960,
+        "height": 720,
+        "has_audio": true,
+        "label": "Book preview"
+      },
+      "video_duration": "14 sec"
+    },
+    {
+      "id": "V01",
+      "title": "Do superheroes also end up buying raw meat hamburgers while fighting against insect criminals?",
+      "year": "2025",
+      "medium": "Experimental video and installation",
+      "size": "",
+      "categories": [
+        "installation",
+        "video"
+      ],
+      "web_images": [
+        {
+          "src": "assets/v01-01.webp",
+          "thumbnail": "assets/v01-01-small.webp",
+          "width": 1800,
+          "height": 1013,
+          "source_width": 1920,
+          "source_height": 1080
+        },
+        {
+          "src": "assets/v01-02.webp",
+          "thumbnail": "assets/v01-02-small.webp",
+          "width": 1800,
+          "height": 1013,
+          "source_width": 1920,
+          "source_height": 1080
+        },
+        {
+          "src": "assets/v01-03.webp",
+          "thumbnail": "assets/v01-03-small.webp",
+          "width": 1800,
+          "height": 1013,
+          "source_width": 1920,
+          "source_height": 1080
+        },
+        {
+          "src": "assets/v01-04.webp",
+          "thumbnail": "assets/v01-04-small.webp",
+          "width": 488,
+          "height": 358,
+          "source_width": 488,
+          "source_height": 358
+        },
+        {
+          "src": "assets/v01-05.webp",
+          "thumbnail": "assets/v01-05-small.webp",
+          "width": 182,
+          "height": 240,
+          "source_width": 182,
+          "source_height": 240
+        }
+      ],
+      "url": "works/v01.html",
+      "description_paragraphs": [
+        "“Do Superheroes Also End Up Buying Raw-Meat Hamburgers While Fighting Against Insect Criminals?” takes the form of an experimental video work. By placing the symbolic treatment of “insects” and “raw-meat hamburgers” at the center of its narrative trajectory, the piece adopts a deliberately flattened mode of storytelling that challenges the single-directional structures common in previous video practices.",
+        "Earlier video and installation works were often constructed around clearly defined conceptual frameworks, such as themes of “alienated labor” or “cultural fusion.” Although figures such as “superheroes” or fast-food motifs—symbols with cultural exteriority— appeared within these works, editing strategies and narrative structures were frequently used to soften their strong semiotic direction, shifting the viewer’s attention toward the underlying systemic relations. Building upon this lineage, the current work employs a de-structured strategy, allowing greater formal freedom within the internal relationships of images and objects. The installation no longer functions as a mere extension of the video but expands into a linguistic and contextual counterpart, forming two parallel “stages” that operate alongside each other.",
+        "This loosened narrative model also contains elements that invite further examination. The flattened structure may reduce emotional anchoring for the viewer and produce a sense of disorientation in the absence of a single central story. Yet such instability is also integral to the work’s logic, pointing toward a visual condition where comic aesthetics, televisual formats, and real life continuously intersect. Within this decentralized structure, rhythm, subtle cues, or repetition may further strengthen the internal tension of the piece.",
+        "The symbolic elements—“insects,” “raw-meat hamburgers,” “superheroes,” and “farm tools”—maintain a deliberately open and loosely connected relationship. This looseness does not indicate the absence of meaning; rather, it creates an echoing field in which viewers generate their own interpretive connections. The ambiguity and sudden appearance of insects, as well as the superhero as a highly industrialized and consumable body image, both gesture toward a broader theme within contemporary visual culture: the condition of “life forms subjected to being seen.”",
+        "The dual-stage structure represents a central formal attempt. Although the two stages currently operate in parallel and their intertextual relationship has not yet reached a state of intense collision, this gap also points toward future potential: by amplifying the tension, contrast, or mutual revelation between video and installation, the work’s sense of “structural absurdity” may become even more pronounced.",
+        "In the use of absurdity, the visual strategies within the piece may at times be read as humorous or eccentric rather than critical. Here, absurdity and symbolism function more like an external surface, while the underlying operative logic continues to engage with critiques of visual structure, systems of spectatorship, and narrative organization.",
+        "Overall, the work does not seek to construct a single linear narrative. Instead, it positions the viewer within a state of partial legibility, where the elements—“insects,” “raw-meat hamburgers,” “superheroes”—do not act as traditional symbols but as visual disruptions that unsettle habitual modes of looking. The piece establishes a gray zone between comics, television shows, and lived reality, using absurdity as a method for observing and reinterpreting the real.",
+        "As a structural experiment in moving-image practice, the work opens new possibilities for the development of future video languages."
+      ],
+      "description": "“Do Superheroes Also End Up Buying Raw-Meat Hamburgers While Fighting Against Insect Criminals?” takes the form of an experimental video work. By placing the symbolic treatment of “insects” and “raw-meat hamburgers” at the center of its narrative trajectory, the piece adopts a deliberately flattened mode of storytelling that challenges the single-directional structures common in previous video practices.\n\nEarlier video and installation works were often constructed around clearly defined conceptual frameworks, such as themes of “alienated labor” or “cultural fusion.” Although figures such as “superheroes” or fast-food motifs—symbols with cultural exteriority— appeared within these works, editing strategies and narrative structures were frequently used to soften their strong semiotic direction, shifting the viewer’s attention toward the underlying systemic relations. Building upon this lineage, the current work employs a de-structured strategy, allowing greater formal freedom within the internal relationships of images and objects. The installation no longer functions as a mere extension of the video but expands into a linguistic and contextual counterpart, forming two parallel “stages” that operate alongside each other.\n\nThis loosened narrative model also contains elements that invite further examination. The flattened structure may reduce emotional anchoring for the viewer and produce a sense of disorientation in the absence of a single central story. Yet such instability is also integral to the work’s logic, pointing toward a visual condition where comic aesthetics, televisual formats, and real life continuously intersect. Within this decentralized structure, rhythm, subtle cues, or repetition may further strengthen the internal tension of the piece.\n\nThe symbolic elements—“insects,” “raw-meat hamburgers,” “superheroes,” and “farm tools”—maintain a deliberately open and loosely connected relationship. This looseness does not indicate the absence of meaning; rather, it creates an echoing field in which viewers generate their own interpretive connections. The ambiguity and sudden appearance of insects, as well as the superhero as a highly industrialized and consumable body image, both gesture toward a broader theme within contemporary visual culture: the condition of “life forms subjected to being seen.”\n\nThe dual-stage structure represents a central formal attempt. Although the two stages currently operate in parallel and their intertextual relationship has not yet reached a state of intense collision, this gap also points toward future potential: by amplifying the tension, contrast, or mutual revelation between video and installation, the work’s sense of “structural absurdity” may become even more pronounced.\n\nIn the use of absurdity, the visual strategies within the piece may at times be read as humorous or eccentric rather than critical. Here, absurdity and symbolism function more like an external surface, while the underlying operative logic continues to engage with critiques of visual structure, systems of spectatorship, and narrative organization.\n\nOverall, the work does not seek to construct a single linear narrative. Instead, it positions the viewer within a state of partial legibility, where the elements—“insects,” “raw-meat hamburgers,” “superheroes”—do not act as traditional symbols but as visual disruptions that unsettle habitual modes of looking. The piece establishes a gray zone between comics, television shows, and lived reality, using absurdity as a method for observing and reinterpreting the real.\n\nAs a structural experiment in moving-image practice, the work opens new possibilities for the development of future video languages.",
+      "production_date": "December 3, 2025",
+      "video": {
+        "src": "assets/video/v01.mp4",
+        "type": "video/mp4",
+        "duration_seconds": 249.685,
+        "duration_label": "4 min 10 sec",
+        "width": 960,
+        "height": 540,
+        "has_audio": true,
+        "label": "Complete video"
+      },
+      "video_duration": "4 min 10 sec",
+      "credits": {
+        "Created by": "Jun Zhou, Danny",
+        "Cinematography": "Jun Zhou, Danny",
+        "Cast": "Davis Bos, Hongrui, Siqiang, Yifan"
+      }
+    },
+    {
+      "id": "V02",
+      "title": "one apple one banana: The Manifestation of Identity in Flux",
+      "year": "2025",
+      "medium": "Photography",
+      "size": "",
+      "categories": [
+        "photography"
+      ],
+      "web_images": [
+        {
+          "src": "assets/v02-01.webp",
+          "thumbnail": "assets/v02-01-small.webp",
+          "width": 1076,
+          "height": 1309,
+          "source_width": 1076,
+          "source_height": 1309
+        }
+      ],
+      "url": "works/v02.html",
+      "description_paragraphs": [
+        "Identity is not fixed but is observed, shaped, and reconstructed within different cultural systems. Through the intervention of hands, the symbolism of color, and the modification of fruit surfaces, this work explores how individuals are encoded or reshaped in the flux of cross-cultural movement.",
+        "The banana reveals five-pointed stars through oxidation, symbolizing marks that become visible only when the environment changes, hinting at the latent and temporal nature of identity. The apple is hollowed out, exposing its vulnerability, while the barcode covering it signifies how consumer systems shape both objects and individuals. The varying nail colors reinforce this process — symbols of gender, class, or personality in some cultures, while mere decoration in others. These acts transform fruit beyond mere consumables, turning them into metaphors for identity and cultural encoding.",
+        "The photographic medium here is not just a tool for documentation but also one for observation and deconstruction. As Susan Sontag discusses in On Photography, images do not merely reproduce reality but assign new meanings through the act of viewing. In navigating between two cultures, how is the individual recognized? Are they inscribed, or are they consumed?"
+      ],
+      "description": "Identity is not fixed but is observed, shaped, and reconstructed within different cultural systems. Through the intervention of hands, the symbolism of color, and the modification of fruit surfaces, this work explores how individuals are encoded or reshaped in the flux of cross-cultural movement.\n\nThe banana reveals five-pointed stars through oxidation, symbolizing marks that become visible only when the environment changes, hinting at the latent and temporal nature of identity. The apple is hollowed out, exposing its vulnerability, while the barcode covering it signifies how consumer systems shape both objects and individuals. The varying nail colors reinforce this process — symbols of gender, class, or personality in some cultures, while mere decoration in others. These acts transform fruit beyond mere consumables, turning them into metaphors for identity and cultural encoding.\n\nThe photographic medium here is not just a tool for documentation but also one for observation and deconstruction. As Susan Sontag discusses in On Photography, images do not merely reproduce reality but assign new meanings through the act of viewing. In navigating between two cultures, how is the individual recognized? Are they inscribed, or are they consumed?"
+    },
+    {
+      "id": "V03",
+      "title": "EGG.PRISON.MOVEMENT.ID PHOTO",
+      "year": "2023",
+      "medium": "PVC paper, mechanical ready-made products",
+      "size": "15 × 10 cm",
+      "categories": [
+        "installation"
+      ],
+      "web_images": [
+        {
+          "src": "assets/v03-01.webp",
+          "thumbnail": "assets/v03-01-small.webp",
+          "width": 1081,
+          "height": 654,
+          "source_width": 1081,
+          "source_height": 654
+        },
+        {
+          "src": "assets/v03-02.webp",
+          "thumbnail": "assets/v03-02-small.webp",
+          "width": 478,
+          "height": 270,
+          "source_width": 478,
+          "source_height": 270
+        }
+      ],
+      "url": "works/v03.html",
+      "description_paragraphs": [
+        "Last year, on my plane trip to Hong Kong, I watched the movie \" Us and Them\" . Although the film has nothing to do with the installation I'm about to introduce, through one of the clips, I was able to find an object that I owned as a child that resembles a moving lamp in the underwater world. This discovery sparked a strong interest in it, leading me to look for a similar product online in vain. It wasn't until the beginning of the year that I finally found the item and decided to make some changes to it."
+      ],
+      "description": "Last year, on my plane trip to Hong Kong, I watched the movie \" Us and Them\" . Although the film has nothing to do with the installation I'm about to introduce, through one of the clips, I was able to find an object that I owned as a child that resembles a moving lamp in the underwater world. This discovery sparked a strong interest in it, leading me to look for a similar product online in vain. It wasn't until the beginning of the year that I finally found the item and decided to make some changes to it.",
+      "credits": {
+        "Photography": "Haodong Ye"
+      }
+    },
+    {
+      "id": "V04",
+      "title": "Do you know Zhou Jun?",
+      "year": "2024–present",
+      "medium": "Empty needle tattoo & skin; spray painting on canvas",
+      "size": "",
+      "categories": [
+        "performance"
+      ],
+      "web_images": [
+        {
+          "src": "assets/v04-01.webp",
+          "thumbnail": "assets/v04-01-small.webp",
+          "width": 734,
+          "height": 464,
+          "source_width": 734,
+          "source_height": 464
+        },
+        {
+          "src": "assets/v04-02.webp",
+          "thumbnail": "assets/v04-02-small.webp",
+          "width": 800,
+          "height": 478,
+          "source_width": 800,
+          "source_height": 478
+        }
+      ],
+      "url": "works/v04.html",
+      "description_paragraphs": [
+        "In the environment I live in, or in a larger systematic society. The directivity of a person's birth is a single, constantly cognizing and building himself. I often think that this state is like a \" continuous arched back\", waiting for a certain moment to break, waiting for the direction to disappear. I can't accept the answer of being dispelled, but I'm just a grasshopper jumping over and over again. The answer is horrible, and the \"broken back\" is inevitable. This is a bloody metaphor I can think of, and it is also a state of dissolving in my mind. As for the \"back\", I don't pay much attention to it, because I can't see it, so I don't believe it for the time being.",
+        "About \"Do you know Zhou Jun?\" I feel that from the beginning of my understanding of the environment, I have been pushed to repeatedly change my name to thickness and label it one by one. Without these, it will be difficult to walk. I often think about my ultimate goal, but I can't find it. Until later, I saw someone say, \"Your life is meaningless.\"",
+        "I thought: Oh, that's it. But I still can't help asking myself these questions, and \" cognition construction and digestion\" has successfully become a closed loop.",
+        "So I can't solve this problem. I can only quietly wait for the \"arched back\" to break...",
+        "Just like \"Do you know Zhou Jun?\"",
+        "No matter how you answer or say it, it will eventually dissipat"
+      ],
+      "description": "In the environment I live in, or in a larger systematic society. The directivity of a person's birth is a single, constantly cognizing and building himself. I often think that this state is like a \" continuous arched back\", waiting for a certain moment to break, waiting for the direction to disappear. I can't accept the answer of being dispelled, but I'm just a grasshopper jumping over and over again. The answer is horrible, and the \"broken back\" is inevitable. This is a bloody metaphor I can think of, and it is also a state of dissolving in my mind. As for the \"back\", I don't pay much attention to it, because I can't see it, so I don't believe it for the time being.\n\nAbout \"Do you know Zhou Jun?\" I feel that from the beginning of my understanding of the environment, I have been pushed to repeatedly change my name to thickness and label it one by one. Without these, it will be difficult to walk. I often think about my ultimate goal, but I can't find it. Until later, I saw someone say, \"Your life is meaningless.\"\n\nI thought: Oh, that's it. But I still can't help asking myself these questions, and \" cognition construction and digestion\" has successfully become a closed loop.\n\nSo I can't solve this problem. I can only quietly wait for the \"arched back\" to break...\n\nJust like \"Do you know Zhou Jun?\"\n\nNo matter how you answer or say it, it will eventually dissipat"
+    },
+    {
+      "id": "V05",
+      "title": "Water Stains",
+      "year": "2023",
+      "medium": "Performance art works",
+      "size": "",
+      "categories": [
+        "performance"
+      ],
+      "web_images": [
+        {
+          "src": "assets/v05-01.webp",
+          "thumbnail": "assets/v05-01-small.webp",
+          "width": 454,
+          "height": 293,
+          "source_width": 454,
+          "source_height": 293
+        },
+        {
+          "src": "assets/v05-02.webp",
+          "thumbnail": "assets/v05-02-small.webp",
+          "width": 465,
+          "height": 292,
+          "source_width": 465,
+          "source_height": 292
+        },
+        {
+          "src": "assets/v05-03.webp",
+          "thumbnail": "assets/v05-03-small.webp",
+          "width": 342,
+          "height": 342,
+          "source_width": 342,
+          "source_height": 342
+        },
+        {
+          "src": "assets/v05-04.webp",
+          "thumbnail": "assets/v05-04-small.webp",
+          "width": 448,
+          "height": 291,
+          "source_width": 448,
+          "source_height": 291
+        }
+      ],
+      "url": "works/v05.html",
+      "description_paragraphs": [
+        "THEY HAVE UNFINISHED DISHES.",
+        "THE WATER STAINS ON IT LEAVE AN INBELIBLE STRAIN.",
+        "Alienated Labor",
+        "Alienated labor is not only the mode of survival of wage workers in the capitalist production process, but also the natural premise of classical political economy. Based on both practical and theoretical considerations, Marx critically analyzed alienated labor and its roots of private ownership. Specifically, the ideological opportunity for the development of Marx's theory of alienated labor was the \" contradiction of two laws\" in classical political economy: labor created wealth, but laborers fell into poverty. The reason why there is a \" contradiction of the two laws\" is that classical political economy regards alienated labor as an unquestionable objective fact and a prerequisite for capitalist production, but does not further investigate the deep causes of alienated labor."
+      ],
+      "description": "THEY HAVE UNFINISHED DISHES.\n\nTHE WATER STAINS ON IT LEAVE AN INBELIBLE STRAIN.\n\nAlienated Labor\n\nAlienated labor is not only the mode of survival of wage workers in the capitalist production process, but also the natural premise of classical political economy. Based on both practical and theoretical considerations, Marx critically analyzed alienated labor and its roots of private ownership. Specifically, the ideological opportunity for the development of Marx's theory of alienated labor was the \" contradiction of two laws\" in classical political economy: labor created wealth, but laborers fell into poverty. The reason why there is a \" contradiction of the two laws\" is that classical political economy regards alienated labor as an unquestionable objective fact and a prerequisite for capitalist production, but does not further investigate the deep causes of alienated labor.",
+      "description_headings": [
+        2
+      ]
+    },
+    {
+      "id": "V06",
+      "title": "Affair",
+      "year": "2023",
+      "medium": "Performance art works",
+      "size": "",
+      "categories": [
+        "performance"
+      ],
+      "web_images": [
+        {
+          "src": "assets/v06-01.webp",
+          "thumbnail": "assets/v06-01-small.webp",
+          "width": 955,
+          "height": 955,
+          "source_width": 955,
+          "source_height": 955
+        },
+        {
+          "src": "assets/v06-02.webp",
+          "thumbnail": "assets/v06-02-small.webp",
+          "width": 402,
+          "height": 314,
+          "source_width": 402,
+          "source_height": 314
+        }
+      ],
+      "url": "works/v06.html",
+      "description_paragraphs": [
+        "Love? “touqing” a Chinese word, refers to maintaining an intimate relationship with a third party even after establishing a romantic or marital relationship. It also refers to secretly dating or engaging in sexual relationships with others.",
+        "In the work, the artist stole an unremoved slogan font from the wall of a construction site on the streets of Hangzhou. The essence of a work is humorous and uninteresting. \"qing\" is associated with the plot and time of the artist's city, forming a special expression. But at the same time, it is also an artist's nostalgia for Zhuantang and Hangzhou from their own perspective. But the work has no substantive relationship with the behavior of \" touqing \" ."
+      ],
+      "description": "Love? “touqing” a Chinese word, refers to maintaining an intimate relationship with a third party even after establishing a romantic or marital relationship. It also refers to secretly dating or engaging in sexual relationships with others.\n\nIn the work, the artist stole an unremoved slogan font from the wall of a construction site on the streets of Hangzhou. The essence of a work is humorous and uninteresting. \"qing\" is associated with the plot and time of the artist's city, forming a special expression. But at the same time, it is also an artist's nostalgia for Zhuantang and Hangzhou from their own perspective. But the work has no substantive relationship with the behavior of \" touqing \" ."
+    },
+    {
+      "id": "P35",
+      "title": "Cyclops",
+      "year": "2026",
+      "medium": "Acrylic on wood panel",
+      "size": "H40 × W30 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p35-01.webp",
+          "thumbnail": "assets/p35-01-small.webp",
+          "width": 1437,
+          "height": 1800,
+          "source_width": 1916,
+          "source_height": 2400
+        }
+      ],
+      "url": "works/p35.html"
+    },
+    {
+      "id": "P36",
+      "title": "Untitled",
+      "year": "2026",
+      "medium": "Acrylic on wood panel",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p36-01.webp",
+          "thumbnail": "assets/p36-01-small.webp",
+          "width": 1800,
+          "height": 1355,
+          "source_width": 2400,
+          "source_height": 1807
+        }
+      ],
+      "url": "works/p36.html"
+    },
+    {
+      "id": "P37",
+      "title": "Tennis Court",
+      "year": "2026",
+      "medium": "Acrylic on wood panel",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p37-01.webp",
+          "thumbnail": "assets/p37-01-small.webp",
+          "width": 1800,
+          "height": 1355,
+          "source_width": 2400,
+          "source_height": 1806
+        }
+      ],
+      "url": "works/p37.html"
+    },
+    {
+      "id": "P38",
+      "title": "Untitled",
+      "year": "2026",
+      "medium": "Acrylic on wood panel",
+      "size": "60 × 80 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p38-01.webp",
+          "thumbnail": "assets/p38-01-small.webp",
+          "width": 1800,
+          "height": 1351,
+          "source_width": 2400,
+          "source_height": 1801
+        }
+      ],
+      "url": "works/p38.html"
+    },
+    {
+      "id": "I08",
+      "title": "Hermes’ Vacant Lot",
+      "year": "2026",
+      "medium": "Wood, oak chess pieces, wax-oil wood finish, props, bamboo, straw mat, and video",
+      "size": "",
+      "categories": [
+        "installation",
+        "video",
+        "performance"
+      ],
+      "web_images": [
+        {
+          "src": "assets/i08-01.webp",
+          "thumbnail": "assets/i08-01-small.webp",
+          "width": 1622,
+          "height": 1082,
+          "source_width": 1622,
+          "source_height": 1082
+        },
+        {
+          "src": "assets/i08-02.webp",
+          "thumbnail": "assets/i08-02-small.webp",
+          "width": 1050,
+          "height": 1572,
+          "source_width": 1050,
+          "source_height": 1572
+        },
+        {
+          "src": "assets/i08-03.webp",
+          "thumbnail": "assets/i08-03-small.webp",
+          "width": 1570,
+          "height": 1077,
+          "source_width": 1570,
+          "source_height": 1077
+        }
+      ],
+      "url": "works/i08.html",
+      "video_duration": "4 min 17 sec",
+      "video_technical": {
+        "duration_seconds": 256.976,
+        "duration_label": "4:16.976",
+        "original_resolution": "1440 × 1080",
+        "original_fps": 60,
+        "subtitled_version": {
+          "language": "Japanese",
+          "resolution": "960 × 720",
+          "fps": 30
+        }
+      },
+      "video": {
+        "src": "assets/video/i08.mp4",
+        "type": "video/mp4",
+        "duration_seconds": 256.976,
+        "duration_label": "4 min 17 sec",
+        "width": 640,
+        "height": 480,
+        "has_audio": true,
+        "label": "Performance documentation"
+      }
+    },
+    {
+      "id": "P39",
+      "title": "Sodium Ion",
+      "year": "",
+      "medium": "Oil and acrylic paint",
+      "size": "30 × 40 cm",
+      "categories": [
+        "painting"
+      ],
+      "web_images": [
+        {
+          "src": "assets/p39-01-display.svg",
+          "thumbnail": "assets/p39-01-display.svg",
+          "width": 891,
+          "height": 1112,
+          "original_src": "assets/p39-01-original.jpg",
+          "original_width": 960,
+          "original_height": 1280,
+          "blank_margin_bounds": [
+            37,
+            85,
+            928,
+            1197
+          ]
+        }
+      ],
+      "url": "works/p39.html"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Rhode Island School of Design",
+      "degree": "BFA in Sculpture",
+      "start_year": 2023,
+      "expected_graduation": 2028,
+      "status": "In progress",
+      "location": "Providence, RI, USA"
+    }
+  ],
+  "exhibitions": [
+    {
+      "id": "garden-of-phantasms",
+      "year": 2026,
+      "title": "Garden of Phantasms: A Lucid Dreaming Experiment",
+      "type": "Group exhibition",
+      "venue": "",
+      "location": ""
+    },
+    {
+      "id": "2026-perturbation",
+      "year": 2026,
+      "title": "Perturbation",
+      "type": "Group exhibition",
+      "venue": "Today Art Museum",
+      "location": "Beijing, China"
+    },
+    {
+      "id": "2026-hui-xiang",
+      "year": 2026,
+      "title": "Hui Xiang",
+      "type": "Group exhibition",
+      "venue": "B131 Gallery",
+      "location": "Hangzhou, China"
+    },
+    {
+      "id": "sata-el-topo",
+      "year": 2025,
+      "title": "SATA’s EL TOPO",
+      "type": "Solo exhibition",
+      "venue": "Waitan Dangdai Art Laboratory",
+      "location": "Shanghai, China"
+    },
+    {
+      "id": "2025-playful",
+      "year": 2025,
+      "title": "Playful",
+      "type": "Group exhibition",
+      "venue": "Songzhuang Art Museum",
+      "location": "Beijing, China"
+    },
+    {
+      "id": "2025-dining-on-the-stars",
+      "year": 2025,
+      "title": "Dining on the Stars",
+      "type": "Group exhibition",
+      "venue": "A Space Gallery",
+      "location": "Brooklyn, New York, USA"
+    },
+    {
+      "id": "2025-a-journey-toward-photography",
+      "year": 2025,
+      "title": "A Journey Toward Photography",
+      "type": "Group exhibition",
+      "venue": "M Place Gallery",
+      "location": "Shanghai, China"
+    },
+    {
+      "id": "2025-made-in",
+      "year": 2025,
+      "title": "Made in",
+      "type": "Group exhibition",
+      "venue": "Gelman Gallery, Rhode Island School of Design",
+      "location": "Providence, RI, USA"
+    },
+    {
+      "id": "2024-migration",
+      "year": 2024,
+      "title": "Migration",
+      "type": "Group exhibition",
+      "venue": "JiaCang Art Museum",
+      "location": "Ningbo, China"
+    },
+    {
+      "id": "2024-it-is-raining",
+      "year": 2024,
+      "title": "It is raining",
+      "type": "Group exhibition",
+      "venue": "Yuan Art Cave",
+      "location": "Hangzhou, China"
+    },
+    {
+      "id": "2024-prelude",
+      "year": 2024,
+      "title": "Prelude",
+      "type": "Group exhibition",
+      "venue": "Absent Gallery",
+      "location": "Guangzhou, China"
+    },
+    {
+      "id": "2023-dune",
+      "year": 2023,
+      "title": "Dune",
+      "type": "Solo exhibition",
+      "venue": "Yuan Art Cave",
+      "location": "Hangzhou, China"
+    }
+  ],
+  "publications": [
+    {
+      "year": 2024,
+      "title": "NO.0",
+      "type": "self-published artist book"
+    },
+    {
+      "year": 2025,
+      "title": "Banana Republic (from Providence to New York)",
+      "type": "self-published artist book",
+      "short_title": "Banana Republic",
+      "completion_date": "2025-07-11",
+      "edition_total": 300
+    }
+  ],
+  "contact": {
+    "email": "jun00074@gmail.com",
+    "instagram": "https://www.instagram.com/zjhahalife/"
+  }
+}
